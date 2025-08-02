@@ -1,0 +1,232 @@
+@charset "UTF-8";
+
+/*================================================
+Navbar CSS
+=================================================*/
+
+.cs-navbar .nextui-navbar-container {
+  border: none;
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: black;
+}
+
+.cs-navbar .nextui-navbar-item {
+  color: var(--whiteColor);
+  font-weight: 500;
+}
+
+/* .cs-navbar .nextui-navbar-item a.active {
+  color: #3772FF;
+} */
+
+.cs-navbar .nextui-navbar-collapse {
+  background: rgba(255, 255, 255, 0.19);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  border: none;
+}
+
+.cs-navbar .nextui-navbar-collapse-item a {
+  color: #374157;
+}
+
+.cs-navbar .nextui-navbar-collapse-item .active {
+  color: var(--blueColor);
+}
+
+.cs-navbar .nextui-navbar-collapse-wrapper {
+  height: inherit;
+  overflow: hidden;
+}
+
+.cs-navbar2 {
+  display: none;
+}
+
+.cs-navbar .nextui-navbar-toggle-icon span {
+  background: var(--whiteColor);
+}
+
+.upper-item-navbar {
+  gap: 5rem;
+}
+
+/*================================================
+Background Video CSS
+=================================================*/
+
+#background-video {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: inherit;
+  object-fit: cover;
+}
+
+.vid-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: inherit;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/*================================================
+Purchase Card CSS
+=================================================*/
+
+.wrapper-card {
+  /* background: var(--blackColor); */
+  border-radius: 0px;
+  padding: 20px !important;
+  height: max-content !important;
+  --b: 3px;
+  /* thickness of the border */
+  --c: #e5ff00;
+  /* color of the border */
+  --w: 20px;
+  /* width of border */
+  position: relative;
+}
+
+.wrapper-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--c);
+  --_g: #0000 90deg, #000 0;
+  --_p: var(--w) var(--w) no-repeat;
+  --mask: conic-gradient(from 90deg at top var(--b) left var(--b), var(--_g)) 0
+      0 / var(--_p),
+    conic-gradient(from 180deg at top var(--b) right var(--b), var(--_g)) 100% 0 /
+      var(--_p),
+    conic-gradient(from 0deg at bottom var(--b) left var(--b), var(--_g)) 0 100% /
+      var(--_p),
+    conic-gradient(from -90deg at bottom var(--b) right var(--b), var(--_g))
+      100% 100% / var(--_p);
+  -webkit-mask: var(--mask);
+  mask: var(--mask);
+}
+
+.cs-card {
+  background: linear-gradient(black, black) padding-box,
+    linear-gradient(180deg, #ff9b3d 0%, #ff9e3e 0.01%, #ffcd4d 100%) border-box !important;
+  border-radius: 0px !important;
+  border: 1.2px solid transparent !important;
+  /* min-height: 550px; */
+  padding: 5px !important;
+}
+
+.cs-card-header {
+  justify-content: center !important;
+  flex-wrap: wrap !important;
+  display: block !important;
+}
+
+/*================================================
+Progress CSS
+=================================================*/
+
+.cs-progress .mantine-Progress-bar {
+  background-color: var(--blueColor);
+  border-radius: 0px;
+}
+
+/*================================================
+Purchase Input CSS
+=================================================*/
+
+.cs-purchase-input {
+  background: linear-gradient(151.2deg, #250b2f 0%, #1d1355 100%) padding-box,
+    linear-gradient(136.1deg, #fc466b 0%, #3f5efb 102%) border-box;
+  border-radius: 30px;
+  border: 3px solid transparent;
+  height: 54px;
+  padding: 5px;
+}
+
+.cs-purchase-input > input {
+  border: none;
+  background-color: transparent;
+  font-size: 18px;
+  text-align: left;
+  font-weight: 500;
+  margin-left: 5px;
+  color: var(--whiteColor);
+}
+
+.p-inputtext:enabled:focus {
+  border: none;
+  box-shadow: none;
+}
+
+.cs-purchase-input > input::placeholder {
+  color: #777e90;
+}
+
+.cs-purchase-input > :-ms-input-placeholder {
+  color: #777e90;
+}
+
+.cs-purchase-input > input::-webkit-input-placeholder {
+  color: #777e90;
+}
+
+/*================================================
+Currency Dropdown CSS
+=================================================*/
+
+.cs-currency-dropdown {
+  color: var(--whiteColor);
+  height: inherit;
+  border: 0px;
+  margin-top: -20px;
+  margin-left: 20px;
+  font-size: 16px;
+}
+
+.cs-currency-dropdown .nextui-button-icon-right {
+  background-color: var(--blueColor);
+  border-radius: 50%;
+}
+
+/*================================================
+  Purchase Page Content CSS
+=================================================*/
+
+.cs-about-card {
+  background: transparent;
+  border: none;
+  box-sizing: border-box;
+  border-radius: 0px;
+  box-shadow: none;
+  width: 100%;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+.cs-purchase-card {
+  background: transparent;
+  border: none;
+  box-sizing: border-box;
+  border-radius: 0px;
+  box-shadow: none;
+  width: 100%;
+  max-width: 550px;
+  margin: 0 auto;
+}
+
+/*================================================
+  Footer CSS
+=================================================*/
+
+.footer-nav-text {
+  color: var(--whiteColor);
+}

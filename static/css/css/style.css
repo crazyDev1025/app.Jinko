@@ -1,0 +1,420 @@
+@charset "UTF-8";
+
+/*================================================
+Start Default CSS
+=================================================*/
+
+@font-face {
+  font-family: "NeueMachina-Regular";
+  src: url("../fonts/NeueMachina-Regular.otf");
+}
+
+@font-face {
+  font-family: "Inter-VariableFont";
+  src: url("../fonts/Inter-VariableFont_slnt,wght.ttf");
+}
+
+@font-face {
+  font-family: "Mont-HeavyDEMO";
+  src: url("../fonts/Mont-HeavyDEMO.otf");
+}
+
+:root {
+  --fontFamily1: "Mont-HeavyDEMO", sans-serif;
+  --fontFamily2: "NeueMachina-Regular", sans-serif;
+  --fontFamily3: "Inter-VariableFont", sans-serif;
+  --whiteColor: #ffffff;
+  --blackColor: #000000;
+  --pinkColor: #dc70fa;
+  --blueColor: #3772ff;
+  --greyColor: #777e90;
+  --yellowColor: #e5ff00;
+  --fontSize: 16px;
+  --transition: 0.5s;
+  /* --i-window-height: 100%; */
+  min-height: 675px;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+#root {
+  height: 100%;
+}
+
+#nextui-modal {
+  height: 100%;
+  position: absolute;
+}
+
+body > #root > div {
+  height: 100%;
+}
+
+body > #root > div > div {
+  height: 100%;
+}
+
+.master-container {
+  display: flex;
+  flex-direction: column;
+  /* min-height: 90vh; */
+  /* min-height: 100vh; */
+  /* min-height: var(--i-window-height); */
+  /* min-height: calc( 100% - 76px); */
+  /* min-height: -webkit-fill-available; */
+  background: var(--blackColor);
+}
+
+/*================================================
+End Default CSS
+=================================================*/
+
+/*================================================
+Start Language Selector CSS
+=================================================*/
+
+.mantine-Select-input {
+  /* background: var(--blackColor); */
+  /* color: var(--whiteColor); */
+  /* text-align: center; */
+  /* font-size: 1em; */
+  /* border-radius: 0px; */
+  /* padding-left: 10px; */
+  /* padding-right: 20px; */
+}
+
+/*================================================
+End Language Selector CSS
+=================================================*/
+
+/*================================================
+  Start Go Top CSS
+=================================================*/
+.go-top {
+  z-index: 4;
+  opacity: 0;
+  right: 20px;
+  width: 45px;
+  height: 45px;
+  bottom: 20px;
+  position: fixed;
+  cursor: pointer;
+  font-size: 30px;
+  border-radius: 50%;
+  visibility: hidden;
+  text-align: center;
+  color: var(--blackColor);
+  -webkit-transition: var(--transition);
+  transition: var(--transition);
+  background-color: var(--whiteColor);
+}
+
+.go-top i {
+  left: 0;
+  top: 50%;
+  right: 0;
+  text-align: center;
+  position: absolute;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.go-top.active {
+  opacity: 1;
+  bottom: 20px;
+  visibility: visible;
+}
+
+.go-top:hover {
+  -webkit-transform: translateY(-10px);
+  transform: translateY(-10px);
+}
+
+/*================================================
+  End Go Top CSS
+=================================================*/
+/*================================================
+  Start Toast CSS
+=================================================*/
+
+.reapop__notification-title {
+  font-size: 16px !important;
+}
+
+.reapop__notification-message {
+  font-size: 16px !important;
+}
+
+/*================================================
+  End Toast CSS
+=================================================*/
+/*********************************
+    Start APTO Dropdown Styles
+  **********************************/
+
+.apto-dropdown-wrapper {
+  width: 85px;
+  height: 45px;
+  float: left;
+  position: relative;
+  /* border: 1px solid #e5e5e5; */
+}
+
+.apto-trigger-dropdown {
+  width: 180px;
+  height: 45px;
+  background-color: #fff;
+  border: 0;
+  padding: 0 20px;
+  transition: 0.2s ease-in;
+  cursor: pointer;
+}
+
+.apto-trigger-dropdown:hover {
+  background-color: #eee;
+}
+
+.apto-trigger-dropdown .fa-caret-down {
+  float: right;
+  line-height: 22px;
+}
+
+.apto-trigger-dropdown svg {
+  width: 25px;
+  float: left;
+  height: 25px;
+}
+
+.dropdown-menu {
+  width: 180px;
+  display: none;
+  z-index: 3;
+  position: absolute;
+  left: 0;
+  top: 45px;
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12),
+    0 2px 4px -1px rgba(0, 0, 0, 0.3);
+}
+
+.dropdown-menu.show {
+  display: block;
+}
+
+.dropdown-item svg {
+  width: 25px;
+  height: 25px;
+  float: left;
+  margin-right: 10px;
+  color: #222;
+}
+
+.dropdown-item {
+  width: 100%;
+  height: 50px;
+  line-height: 25px;
+  border: 0;
+  padding: 0 20px;
+  cursor: pointer;
+  transition: 0.2s ease-in;
+  background-color: #fff;
+  font-weight: 700;
+  font-family: Montserrat, serif;
+  color: #5a616c;
+  text-align: left;
+}
+
+.dropdown-item:hover {
+  background-color: #e5e5e5;
+}
+
+.dropdown-item:not(:last-child) {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+/*********************************
+    End APTO Dropdown Styles
+  **********************************/
+
+/*********************************
+    Start Custom Button Styles
+  **********************************/
+.border-radio-button-desktop {
+  border: 1px solid var(--greyColor);
+  border-right: 0;
+  background: transparent;
+  border-radius: 0px;
+}
+
+.border-radio-button-desktop:last-child {
+  border: 1px solid var(--greyColor);
+}
+
+.border-radio-button-mobile {
+  border: 1px solid var(--greyColor);
+  border-bottom: 0;
+  background: transparent;
+  border-radius: 0px;
+  width: 100%;
+}
+
+.border-radio-button-mobile:last-child {
+  border: 1px solid var(--greyColor);
+}
+
+/*********************************
+    End Custom Button Styles
+  **********************************/
+/*********************************
+    Start Custom Dropdown Styles
+  **********************************/
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px !important;
+  height: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent !important;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888 !important;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555 !important;
+}
+
+.hide-scrollbar-keep-function {
+  /* background-color: #eee; */
+  /* width: 200px;
+  height: 100px; */
+  /* border: 1px dotted black; */
+  overflow-x: scroll;
+  /* Add the ability to scroll */
+  cursor: pointer;
+  -webkit-user-select: none;
+  /* Safari */
+  -ms-user-select: none;
+  /* IE 10 and IE 11 */
+  user-select: none;
+  /* Standard syntax */
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+
+/* .hide-scrollbar-keep-function::-webkit-scrollbar { */
+/* height:5px; */
+/* display: none; */
+/* } */
+
+/* Hide scrollbar for IE, Edge and Firefox */
+
+.hide-scrollbar-keep-function {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+/*********************************
+    End Custom Dropdown Styles
+  **********************************/
+
+/* .form-check-input-scene-radio-custom {
+  background-color: white !important;
+  border: 1px solid #01F3F6 !important;
+}
+
+.form-check-input-scene-radio-custom:checked[type=radio] {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='2' fill='%2301F3F6'/%3e%3c/svg%3e") !important;
+}
+
+.form-check-input-scene-radio-custom:checked {
+  background-color: white !important;
+  border-color: #01F3F6 !important;
+}
+
+.form-check-input-scene-text-custom:has(.form-check-input-scene-radio-custom:checked) {
+  color: #01F3F6 !important;
+} */
+
+/* .form-check-input-custom:checked {
+  background-color: white !important;
+  border-color: white !important;
+}
+
+.form-check-input[type="radio"] {
+  visibility: hidden;
+  user-select: none;
+}
+
+
+.form-check>label {
+  user-select: none;
+} */
+
+#scroll-container {
+  /* border: 3px solid black;
+  border-radius: 5px; */
+  overflow: hidden;
+}
+
+#scroll-text {
+  text-wrap: nowrap;
+  /* animation properties */
+  -moz-transform: translateX(100%);
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+
+  -moz-animation: my-animation 40s linear infinite;
+  -webkit-animation: my-animation 40s linear infinite;
+  animation: my-animation 40s linear infinite;
+}
+
+/* for Firefox */
+@-moz-keyframes my-animation {
+  from {
+    -moz-transform: translateX(100%);
+  }
+
+  to {
+    -moz-transform: translateX(-100%);
+  }
+}
+
+/* for Chrome */
+@-webkit-keyframes my-animation {
+  from {
+    -webkit-transform: translateX(100%);
+  }
+
+  to {
+    -webkit-transform: translateX(-100%);
+  }
+}
+
+@keyframes my-animation {
+  from {
+    -moz-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+  }
+
+  to {
+    -moz-transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+}
