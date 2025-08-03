@@ -13186,7 +13186,7 @@
                     "https://discord.com/invite/2HPqa69WFz",
                   REACT_APP_MICROPHONE_IS_DISABLED: "true",
                   REACT_APP_STAKING_START_DATE: "1723197600000",
-                  REACT_APP_LANDING_LINK: "https://jinkoai.com/",
+                  REACT_APP_LANDING_LINK: "https://www.jinkoai.agency/",
                 }.IS_VITEST),
               i
             );
