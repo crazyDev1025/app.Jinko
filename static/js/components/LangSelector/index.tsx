@@ -13,41 +13,7 @@ const LangSelector: React.FC = () => {
   )
 
   return (
-    <Dropdown>
-      <Dropdown.Button
-        rounded={false}
-        css={{
-          // background: "var(--yellowColor)",
-          backgroundColor: "transparent",
-          color: "var(--yellowColor)",
-          borderRadius: "20px",
-          fontFamily: "var(--fontFamily1)",
-          width: "fit-content",
-          padding: "0px",
-          textTransform: "uppercase",
-        }}
-      >
-        {languageList.find(l => l.locale === selectedValue.toString())?.code}
-      </Dropdown.Button>
-      <Dropdown.Menu
-        color="default"
-        disallowEmptySelection
-        selectionMode="single"
-        selectedKeys={selected}
-        onSelectionChange={(la) => {
-          setSelected(la as Set<string>)
-          const newLocale = Object.values(la)[0]
-          setLanguage(languageList.find(l => l.locale === newLocale.toString()))
-        }}
-        css={{
-          fontFamily: "var(--fontFamily1)"
-        }}
-      >
-        {languageList.map((la) => (
-          <Dropdown.Item key={la.locale}>{la.language}</Dropdown.Item>
-        ))}
-      </Dropdown.Menu>
-    </Dropdown>
+    <div></div>
   )
 }
 

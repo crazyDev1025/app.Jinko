@@ -855,42 +855,6 @@ const OptionsDesktopComponent: React.FC<OptionsDesktopComponentProps> = ({ model
             {`${intl.formatMessage({ id: "language", defaultMessage: "Language" })}:`}
           </GeneralText>
         </Flex>
-        <Flex direction="row" wrap="wrap" style={{ flex: 3 }}>
-          {
-            languageList.length > 0 ?
-              <DropdownListNext offset={0} disableTriggerPressedAnimation rounded={false} containerCss={{ borderRadius: "0px" }} isDisabled={modelIsLoading}                >
-                <DropdownListNextButton
-                  css={{
-                    color: "var(--whiteColor)",
-                    justifyContent: "space-between",
-                    fontSize: "1rem"
-                  }}
-                >
-                  <GeneralText size="1rem" color="var(--whiteColor)" weight="bold" transform="uppercase" css={{ fontFamily: "var(--fontFamily1)" }} >
-                    {currentLanguage.name}
-                  </GeneralText>
-                </DropdownListNextButton>
-                <DropdownListNextMenu
-                  containerCss={{
-                    borderRadius: "0px",
-                  }}
-                  color="default"
-                  disallowEmptySelection
-                  selectionMode="single"
-                  selectedKeys={currentLanguage.id.toString()}
-                  onSelectionChange={(la) => { handleLanguageListDropdown(la) }}
-                >
-                  {languageList.map((la) => (
-                    <DropdownItemNext key={la.id.toString()} css={{ color: "var(--whiteColor)", fontWeight: "bold", fontFamily: "var(--fontFamily1)", fontSize: "1rem", textTransform: "uppercase" }}>
-                      {la.name}
-                    </DropdownItemNext>
-                  ))}
-                </DropdownListNextMenu>
-              </DropdownListNext>
-              :
-              null
-          }
-        </Flex>
       </Flex>
       {
         currentModel?.default_voice_id ?
@@ -1947,9 +1911,6 @@ const Chat: React.FC = () => {
               </Flex>
               <FormLayout onSubmit={formik.handleSubmit} autoComplete="off" >
                 <FormContainer gap="10px" justify="center" align="start" direction="column" style={{ width: "100%" }}>
-                  <DesktopDropdownListWrapper id="desktop-options" gap="10px" justify="center" align="start" direction="column" style={{ width: "100%" }} >
-                    <OptionsDesktopComponent modelIsLoading={modelIsLoading || botIsTyping} handleLanguageListDropdown={handleLanguageListDropdown} handleVoiceListDropdown={handleVoiceListDropdown} handleModelListSelector={handleModelListSelector} languageList={languageList} voiceList={voiceList} modelList={modelList} currentLanguage={currentLanguage} currentVoice={currentVoice} currentModel={currentModel} />
-                  </DesktopDropdownListWrapper>
                   <StyledMainContainerWrapper gap="10px" direction="column" style={{ width: "100%", position: "relative", height: "100%" }}>
                     <StyledMainContainer>
                       <ChatContainer>
