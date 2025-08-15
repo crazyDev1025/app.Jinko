@@ -373,7 +373,7 @@
                         " ",
                         (0, R.jsx)(w.Z, {
                           id: "jinko",
-                          defaultMessage: "Jinko",
+                          defaultMessage: "Neko",
                         }),
                       ],
                     }),
@@ -472,7 +472,7 @@
                         " ",
                         (0, R.jsx)(w.Z, {
                           id: "jinko",
-                          defaultMessage: "Jinko",
+                          defaultMessage: "Neko",
                         }),
                       ],
                     }),
@@ -1801,7 +1801,7 @@
             _ = (0, l.useCallback)(
               function () {
                 return (0, O.BP)(a).filter(function (e) {
-                  return "Jinko" === e.symbol;
+                  return "Neko" === e.symbol;
                 })[0];
               },
               [a]
@@ -2060,7 +2060,7 @@
                         lh: 1,
                         children: (0, R.jsx)(w.Z, {
                           id: "stake-jinko-token",
-                          defaultMessage: "Stake Jinko Token",
+                          defaultMessage: "Stake Neko Token",
                         }),
                       }),
                       (0, R.jsx)(v.T, { h: "md" }),

@@ -2145,7 +2145,7 @@
                                     : n.name),
                                 (Fe.current = []);
                               var o = [],
-                                s = h.current.getTransformNodeByName("Jinko"),
+                                s = h.current.getTransformNodeByName("Neko"),
                                 l = s.getChildTransformNodes(!0),
                                 d = l[0].name;
                               l[0].dispose(),

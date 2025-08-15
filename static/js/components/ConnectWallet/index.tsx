@@ -483,7 +483,7 @@ const WalletDrawer: React.FC<any> = () => {
                   { getFormatNumberWithK(getFullDisplayBalance(jinkoBalance, (multichainTokens.jinko.decimals[chainId])), 1, 2)}
                 </GeneralText>
                 <GeneralText size="clamp(0.7rem,2vw,0.75rem)" color="white" weight="extrabold" css={{ fontFamily: "var(--fontFamily3)", lineHeight: "1", textTransform: "uppercase" }}>
-                  {`${intl.formatMessage({ id: "jinko", defaultMessage: "Jinko" })}`}
+                  {`${intl.formatMessage({ id: "jinko", defaultMessage: "Neko" })}`}
                 </GeneralText>
               </Flex>
             </Flex>
@@ -509,7 +509,7 @@ const WalletDrawer: React.FC<any> = () => {
                       {getFormatNumberWithK(item?.credits, 1)}
                     </GeneralText>
                     {/* {
-                          getCurrentPaymentToken()?.symbol === "Jinko" && item?.bonus > 0 &&
+                          getCurrentPaymentToken()?.symbol === "Neko" && item?.bonus > 0 &&
                           <GeneralText size="clamp(0.625rem,2vw,0.725rem)" color="white" weight="extrabold" css={{ fontFamily: "var(--fontFamily3)", lineHeight: "1", textTransform: "uppercase" }}>
                             {`+${getFormatNumberWithDecimal((item?.bonus * 100), 1)}%`}
                           </GeneralText>
@@ -534,8 +534,8 @@ const WalletDrawer: React.FC<any> = () => {
                 {getCurrentPaymentToken()?.symbol === "USDT" ? jinkoPrice.usd : jinkoPrice.jinko}
               </GeneralText>
             </div>
-              {/* <GeneralText size="clamp(0.9375rem,2vw,0.9375rem)" color="#E5FF00" weight="bold" css={{ fontFamily: "var(--fontFamily3)", lineHeight: "1", textTransform: "uppercase", visibility: getCurrentPaymentToken()?.symbol === "Jinko" && "hidden" }}>
-                {`~ ${getCurrentPaymentToken()?.symbol === "USDT" ? jinkoPrice.jinko : '0'} Jinko`}
+              {/* <GeneralText size="clamp(0.9375rem,2vw,0.9375rem)" color="#E5FF00" weight="bold" css={{ fontFamily: "var(--fontFamily3)", lineHeight: "1", textTransform: "uppercase", visibility: getCurrentPaymentToken()?.symbol === "Neko" && "hidden" }}>
+                {`~ ${getCurrentPaymentToken()?.symbol === "USDT" ? jinkoPrice.jinko : '0'} Neko`}
               </GeneralText> */}
             {/* </Flex> */}
             <Select
@@ -552,8 +552,8 @@ const WalletDrawer: React.FC<any> = () => {
               }
               />
               <div>
-          <GeneralText size="clamp(0.9375rem,2vw,0.9375rem)" color="#E5FF00" weight="bold" css={{ fontFamily: "var(--fontFamily3)", lineHeight: "1", textTransform: "uppercase", visibility: getCurrentPaymentToken()?.symbol === "Jinko" && "hidden" }}>
-                {`~ ${getCurrentPaymentToken()?.symbol === "USDT" ? jinkoPrice.jinko : '0'} Jinko`}
+          <GeneralText size="clamp(0.9375rem,2vw,0.9375rem)" color="#E5FF00" weight="bold" css={{ fontFamily: "var(--fontFamily3)", lineHeight: "1", textTransform: "uppercase", visibility: getCurrentPaymentToken()?.symbol === "Neko" && "hidden" }}>
+                {`~ ${getCurrentPaymentToken()?.symbol === "USDT" ? jinkoPrice.jinko : '0'} Neko`}
               </GeneralText>
 
               </div>

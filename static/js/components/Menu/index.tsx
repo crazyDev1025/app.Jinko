@@ -310,7 +310,7 @@ const Menu: React.FC = () => {
             </>
           ) : (
             <Image
-              src="/images/jinko-logo.png"
+              src="/images/neko-logo.png"
               alt="Whitelabel Image"
               width="150px"
               onClick={() => {

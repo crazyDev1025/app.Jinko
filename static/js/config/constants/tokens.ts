@@ -66,7 +66,7 @@ export const multichainTokens = {
     }
   },
   jinko: {
-    symbol: 'Jinko',
+    symbol: 'Neko',
     address: {
       1: '0xE97dB8503dd3E3eB0286AAFC50327C598EFDb578',
       5: '0x82C0A81632A021085a59e9FFA16c77577CD13aE8',
@@ -92,8 +92,8 @@ export const paymentList = [
 
   },
   {
-    name: 'Jinko',
-    symbol: 'Jinko',
+    name: 'Neko',
+    symbol: 'Neko',
     is_token: true,
     image: 'https://s2.coinmarketcap.com/static/img/coins/64x64/821.png'
   }

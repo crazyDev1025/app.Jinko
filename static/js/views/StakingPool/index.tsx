@@ -222,7 +222,7 @@ const AccordionLabel = ({
         >
           <Text size="md" weight={700} ff="var(--fontFamily3)" tt="uppercase">
             {parseFloat(staked).toFixed(4)}{" "}
-            <FormattedMessage id="jinko" defaultMessage="Jinko" />
+            <FormattedMessage id="jinko" defaultMessage="Neko" />
           </Text>
           <Text
             size="sm"
@@ -312,7 +312,7 @@ const AccordionLabel = ({
               textAlignLast: "center",
             }}
           >
-            {tvl} <FormattedMessage id="jinko" defaultMessage="Jinko" />
+            {tvl} <FormattedMessage id="jinko" defaultMessage="Neko" />
           </Text>
           <Text
             size="sm"
@@ -1381,7 +1381,7 @@ const StakingPool: React.FC = () => {
 
   const getCurrentPaymentToken = useCallback(() => {
     const c = getPaymentList(chainId).filter(
-      (item) => item.symbol === "Jinko"
+      (item) => item.symbol === "Neko"
     )[0];
     return c;
   }, [chainId]);
@@ -1601,7 +1601,7 @@ const StakingPool: React.FC = () => {
             >
               <FormattedMessage
                 id="stake-jinko-token"
-                defaultMessage="Stake Jinko Token"
+                defaultMessage="Stake Neko Token"
               />
             </Text>
             <Space h="md" />

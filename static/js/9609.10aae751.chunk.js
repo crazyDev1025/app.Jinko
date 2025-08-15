@@ -13169,7 +13169,7 @@
                   WDS_SOCKET_PATH: void 0,
                   WDS_SOCKET_PORT: void 0,
                   FAST_REFRESH: !0,
-                  REACT_APP_PROJECT_NAME: "Jinko",
+                  REACT_APP_PROJECT_NAME: "Neko",
                   REACT_APP_INFURA_KEY: "37858659f9744626be6bd715f0e65964",
                   REACT_APP_API_LINK: "https://api.jinkoai.com/",
                   REACT_APP_GENERATIVE_API_LINK:

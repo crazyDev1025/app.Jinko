@@ -614,7 +614,7 @@ const ShareUrlModal: React.FC<ShareUrlModalProps> = ({ show, onClose, taskDetail
                     {`${intl.formatMessage({ id: "task", defaultMessage: "Task" })} 1:`}
                   </GeneralText>
                   <GeneralText size="clamp(0.9rem,2vw,1rem)" color="var(--whiteColor)" weight="bold" css={{ fontFamily: "var(--fontFamily1)", textTransform: "capitalize", lineHeight: "1" }}>
-                    {`${intl.formatMessage({ id: "Chat & train Jinko Ai to reach 500 EXP", defaultMessage: "Chat & train Jinko Ai to reach 500 EXP" })}`}
+                    {`${intl.formatMessage({ id: "Chat & train Neko Ai to reach 500 EXP", defaultMessage: "Chat & train Neko Ai to reach 500 EXP" })}`}
                   </GeneralText>
                 </Flex>
               </Flex>
@@ -1269,7 +1269,7 @@ const Chat: React.FC = () => {
               headGeoMorphTargetIndexesByName.current = [];
               const headGeoPrimitiveList = [];
 
-              const jinkoTfNd = sceneRef.current.getTransformNodeByName("Jinko")
+              const jinkoTfNd = sceneRef.current.getTransformNodeByName("Neko")
               const childTfNdsJinko = jinkoTfNd.getChildTransformNodes(true)
               const childTfNdJinkoName = childTfNdsJinko[0].name;
               childTfNdsJinko[0].dispose();
@@ -1886,7 +1886,7 @@ const Chat: React.FC = () => {
                         taskDetails.is_max_exp && taskDetails.is_share && taskDetails.is_join_discord && taskDetails.is_airdrop ?
                           // <Marquee direction="left" delay={2} autoFill>
                           //   <GeneralText size="1rem" color="var(--whiteColor)" weight="normal" css={{ padding: "0px 15px 0px 0px" }} >
-                          //     {intl.formatMessage({ id: "congratulations-you-have-unlocked-an", defaultMessage: "Congratulations! 🥳 You've unlocked an amazing achievement and qualified for the Jinko Airdrop!" })}
+                          //     {intl.formatMessage({ id: "congratulations-you-have-unlocked-an", defaultMessage: "Congratulations! 🥳 You've unlocked an amazing achievement and qualified for the Neko Airdrop!" })}
                           //   </GeneralText>
                           // </Marquee>
                           <>
