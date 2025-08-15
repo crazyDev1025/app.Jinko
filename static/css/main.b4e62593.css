@@ -166,6 +166,7 @@ body > #root > div > div {
   border: 1px solid var(--greyColor);
   border-radius: 0;
   border-right: 0;
+  display: none;
 }
 .border-radio-button-desktop:last-child,
 .border-radio-button-mobile {

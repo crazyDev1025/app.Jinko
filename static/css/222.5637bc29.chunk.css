@@ -174,12 +174,12 @@
   justify-content: flex-start;
   margin: 0 8px 0 0;
   width: 42px;
+  display: none;
 }
 .cs-message__avatar,
 .cs-message__content-wrapper {
   box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
+  display: none;
 }
 .cs-message__header {
   display: flex;

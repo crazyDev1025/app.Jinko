@@ -1,0 +1,1099 @@
+<html lang="en-US" class="dark-theme"
+  style="color-scheme: dark; --wcm-color-fg-1: rgb(20,20,20); --wcm-color-fg-2: rgb(121,134,134); --wcm-color-fg-3: rgb(158,169,169); --wcm-color-bg-1: rgb(255,255,255); --wcm-color-bg-2: rgb(241,243,243); --wcm-color-bg-3: rgb(228,231,231); --wcm-color-overlay: rgba(0,0,0,0.1); --wcm-accent-color: #3396FF; --wcm-accent-fill-color: #FFFFFF; --wcm-z-index: 89; --wcm-background-color: #3396FF; --wcm-background-border-radius: 8px; --wcm-container-border-radius: 30px; --wcm-wallet-icon-border-radius: 15px; --wcm-wallet-icon-large-border-radius: 30px; --wcm-wallet-icon-small-border-radius: 7px; --wcm-input-border-radius: 28px; --wcm-button-border-radius: 10px; --wcm-notification-border-radius: 36px; --wcm-secondary-button-border-radius: 28px; --wcm-icon-button-border-radius: 50%; --wcm-button-hover-highlight-border-radius: 10px; --wcm-text-big-bold-size: 20px; --wcm-text-big-bold-weight: 600; --wcm-text-big-bold-line-height: 24px; --wcm-text-big-bold-letter-spacing: -0.03em; --wcm-text-big-bold-text-transform: none; --wcm-text-xsmall-bold-size: 10px; --wcm-text-xsmall-bold-weight: 700; --wcm-text-xsmall-bold-line-height: 12px; --wcm-text-xsmall-bold-letter-spacing: 0.02em; --wcm-text-xsmall-bold-text-transform: uppercase; --wcm-text-xsmall-regular-size: 12px; --wcm-text-xsmall-regular-weight: 600; --wcm-text-xsmall-regular-line-height: 14px; --wcm-text-xsmall-regular-letter-spacing: -0.03em; --wcm-text-xsmall-regular-text-transform: none; --wcm-text-small-thin-size: 14px; --wcm-text-small-thin-weight: 500; --wcm-text-small-thin-line-height: 16px; --wcm-text-small-thin-letter-spacing: -0.03em; --wcm-text-small-thin-text-transform: none; --wcm-text-small-regular-size: 14px; --wcm-text-small-regular-weight: 600; --wcm-text-small-regular-line-height: 16px; --wcm-text-small-regular-letter-spacing: -0.03em; --wcm-text-small-regular-text-transform: none; --wcm-text-medium-regular-size: 16px; --wcm-text-medium-regular-weight: 600; --wcm-text-medium-regular-line-height: 20px; --wcm-text-medium-regular-letter-spacing: -0.03em; --wcm-text-medium-regular-text-transform: none; --wcm-font-family: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, Ubuntu, 'Helvetica Neue', sans-serif; --wcm-font-feature-settings: 'tnum' on, 'lnum' on, 'case' on; --wcm-success-color: rgb(38,181,98); --wcm-error-color: rgb(242, 90, 103); --wcm-overlay-background-color: rgba(0, 0, 0, 0.3); --wcm-overlay-backdrop-filter: none;">
+
+<head>
+  <style data-emotion="mantine" data-s=""></style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=5,minimum-scale=1">
+  <meta property="og:title" content="Jinko">
+  <title>Jinko</title>
+  <script defer="defer" src="/static/js/main.5cb4bbc6.js"></script>
+  <link href="/static/css/main.b4e62593.css" rel="stylesheet">
+  <style></style>
+  <style type="text/css">
+    .lf-progress {
+      -webkit-appearance: none;
+      -moz-apperance: none;
+      width: 100%;
+      /* margin: 0 10px; */
+      height: 4px;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+
+    .lf-progress:focus {
+      outline: none;
+      border: none;
+    }
+
+    .lf-progress::-moz-range-track {
+      cursor: pointer;
+      background: none;
+      border: none;
+      outline: none;
+    }
+
+    .lf-progress::-webkit-slider-thumb {
+      -webkit-appearance: none !important;
+      height: 13px;
+      width: 13px;
+      border: 0;
+      border-radius: 50%;
+      background: #0fccce;
+      cursor: pointer;
+    }
+
+    .lf-progress::-moz-range-thumb {
+      -moz-appearance: none !important;
+      height: 13px;
+      width: 13px;
+      border: 0;
+      border-radius: 50%;
+      background: #0fccce;
+      cursor: pointer;
+    }
+
+    .lf-progress::-ms-track {
+      width: 100%;
+      height: 3px;
+      cursor: pointer;
+      background: transparent;
+      border-color: transparent;
+      color: transparent;
+    }
+
+    .lf-progress::-ms-fill-lower {
+      background: #ccc;
+      border-radius: 3px;
+    }
+
+    .lf-progress::-ms-fill-upper {
+      background: #ccc;
+      border-radius: 3px;
+    }
+
+    .lf-progress::-ms-thumb {
+      border: 0;
+      height: 15px;
+      width: 15px;
+      border-radius: 50%;
+      background: #0fccce;
+      cursor: pointer;
+    }
+
+    .lf-progress:focus::-ms-fill-lower {
+      background: #ccc;
+    }
+
+    .lf-progress:focus::-ms-fill-upper {
+      background: #ccc;
+    }
+
+    .lf-player-container :focus {
+      outline: 0;
+    }
+
+    .lf-popover {
+      position: relative;
+    }
+
+    .lf-popover-content {
+      display: inline-block;
+      position: absolute;
+      opacity: 1;
+      visibility: visible;
+      transform: translate(0, -10px);
+      box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+      transition: all 0.3s cubic-bezier(0.75, -0.02, 0.2, 0.97);
+    }
+
+    .lf-popover-content.hidden {
+      opacity: 0;
+      visibility: hidden;
+      transform: translate(0, 0px);
+    }
+
+    .lf-player-btn-container {
+      display: flex;
+      align-items: center;
+    }
+
+    .lf-player-btn {
+      cursor: pointer;
+      fill: #999;
+      width: 14px;
+    }
+
+    .lf-player-btn.active {
+      fill: #555;
+    }
+
+    .lf-popover {
+      position: relative;
+    }
+
+    .lf-popover-content {
+      display: inline-block;
+      position: absolute;
+      background-color: #ffffff;
+      opacity: 1;
+
+      transform: translate(0, -10px);
+      box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+      transition: all 0.3s cubic-bezier(0.75, -0.02, 0.2, 0.97);
+      padding: 10px;
+    }
+
+    .lf-popover-content.hidden {
+      opacity: 0;
+      visibility: hidden;
+      transform: translate(0, 0px);
+    }
+
+    .lf-arrow {
+      position: absolute;
+      z-index: -1;
+      content: '';
+      bottom: -9px;
+      border-style: solid;
+      border-width: 10px 10px 0px 10px;
+    }
+
+    .lf-left-align,
+    .lf-left-align .lfarrow {
+      left: 0;
+      right: unset;
+    }
+
+    .lf-right-align,
+    .lf-right-align .lf-arrow {
+      right: 0;
+      left: unset;
+    }
+
+    .lf-text-input {
+      border: 1px #ccc solid;
+      border-radius: 5px;
+      padding: 3px;
+      width: 60px;
+      margin: 0;
+    }
+
+    .lf-color-picker {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      height: 90px;
+    }
+
+    .lf-color-selectors {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .lf-color-component {
+      display: flex;
+      flex-direction: row;
+      font-size: 12px;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .lf-color-component strong {
+      width: 40px;
+    }
+
+    .lf-color-component input[type='range'] {
+      margin: 0 0 0 10px;
+    }
+
+    .lf-color-component input[type='number'] {
+      width: 50px;
+      margin: 0 0 0 10px;
+    }
+
+    .lf-color-preview {
+      font-size: 12px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      padding-left: 5px;
+    }
+
+    .lf-preview {
+      height: 60px;
+      width: 60px;
+    }
+
+    .lf-popover-snapshot {
+      width: 150px;
+    }
+
+    .lf-popover-snapshot h5 {
+      margin: 5px 0 10px 0;
+      font-size: 0.75rem;
+    }
+
+    .lf-popover-snapshot a {
+      display: block;
+      text-decoration: none;
+    }
+
+    .lf-popover-snapshot a:before {
+      content: '⥼';
+      margin-right: 5px;
+    }
+
+    .lf-popover-snapshot .lf-note {
+      display: block;
+      margin-top: 10px;
+      color: #999;
+    }
+
+    .lf-player-controls>div {
+      margin-right: 5px;
+      margin-left: 5px;
+    }
+
+    .lf-player-controls>div:first-child {
+      margin-left: 0px;
+    }
+
+    .lf-player-controls>div:last-child {
+      margin-right: 0px;
+    }
+  </style>
+  <style data-emotion="css" data-s=""></style>
+  <script async="false" src="chrome-extension://canipghmckojpianfgiklhbgpfmhjkjg/static/js/inject.bundle.js"></script>
+  <style data-styled="active" data-styled-version="5.3.9"></style>
+  <style id="monica-reading-highlight-style">
+    .monica-reading-highlight {
+      animation: fadeInOut 1.5s ease-in-out;
+    }
+
+    @keyframes fadeInOut {
+
+      0%,
+      100% {
+        background-color: transparent;
+      }
+
+      30%,
+      70% {
+        background-color: rgba(2, 118, 255, 0.20);
+      }
+    }
+  </style>
+  <link rel="stylesheet" type="text/css" href="/static/css/222.5637bc29.chunk.css">
+</head>
+
+<body monica-id="ofpnmcalabcbjgholdjcjblkibolbppb" monica-version="7.9.7"><noscript>You need to enable JavaScript to run
+    this app.</noscript>
+  <div id="root">
+    <div data-overlay-container="true">
+      <div data-rk="">
+        <style>
+          [data-rk] {
+            --rk-blurs-modalOverlay: blur(0px);
+            --rk-fonts-body: SFRounded, ui-rounded, "SF Pro Rounded", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+            --rk-radii-actionButton: 9999px;
+            --rk-radii-connectButton: 12px;
+            --rk-radii-menuButton: 12px;
+            --rk-radii-modal: 24px;
+            --rk-radii-modalMobile: 28px;
+            --rk-colors-accentColor: #0E76FD;
+            --rk-colors-accentColorForeground: #FFF;
+            --rk-colors-actionButtonBorder: rgba(0, 0, 0, 0.04);
+            --rk-colors-actionButtonBorderMobile: rgba(0, 0, 0, 0.06);
+            --rk-colors-actionButtonSecondaryBackground: rgba(0, 0, 0, 0.06);
+            --rk-colors-closeButton: rgba(60, 66, 66, 0.8);
+            --rk-colors-closeButtonBackground: rgba(0, 0, 0, 0.06);
+            --rk-colors-connectButtonBackground: #FFF;
+            --rk-colors-connectButtonBackgroundError: #FF494A;
+            --rk-colors-connectButtonInnerBackground: linear-gradient(0deg, rgba(0, 0, 0, 0.03), rgba(0, 0, 0, 0.06));
+            --rk-colors-connectButtonText: #25292E;
+            --rk-colors-connectButtonTextError: #FFF;
+            --rk-colors-connectionIndicator: #30E000;
+            --rk-colors-downloadBottomCardBackground: linear-gradient(126deg, rgba(255, 255, 255, 0) 9.49%, rgba(171, 171, 171, 0.04) 71.04%), #FFFFFF;
+            --rk-colors-downloadTopCardBackground: linear-gradient(126deg, rgba(171, 171, 171, 0.2) 9.49%, rgba(255, 255, 255, 0) 71.04%), #FFFFFF;
+            --rk-colors-error: #FF494A;
+            --rk-colors-generalBorder: rgba(0, 0, 0, 0.06);
+            --rk-colors-generalBorderDim: rgba(0, 0, 0, 0.03);
+            --rk-colors-menuItemBackground: rgba(60, 66, 66, 0.1);
+            --rk-colors-modalBackdrop: rgba(0, 0, 0, 0.3);
+            --rk-colors-modalBackground: #FFF;
+            --rk-colors-modalBorder: transparent;
+            --rk-colors-modalText: #25292E;
+            --rk-colors-modalTextDim: rgba(60, 66, 66, 0.3);
+            --rk-colors-modalTextSecondary: rgba(60, 66, 66, 0.6);
+            --rk-colors-profileAction: #FFF;
+            --rk-colors-profileActionHover: rgba(255, 255, 255, 0.5);
+            --rk-colors-profileForeground: rgba(60, 66, 66, 0.06);
+            --rk-colors-selectedOptionBorder: rgba(60, 66, 66, 0.1);
+            --rk-colors-standby: #FFD641;
+            --rk-shadows-connectButton: 0px 4px 12px rgba(0, 0, 0, 0.1);
+            --rk-shadows-dialog: 0px 8px 32px rgba(0, 0, 0, 0.32);
+            --rk-shadows-profileDetailsAction: 0px 2px 6px rgba(37, 41, 46, 0.04);
+            --rk-shadows-selectedOption: 0px 2px 6px rgba(0, 0, 0, 0.24);
+            --rk-shadows-selectedWallet: 0px 2px 6px rgba(0, 0, 0, 0.12);
+            --rk-shadows-walletLogo: 0px 2px 16px rgba(0, 0, 0, 0.16);
+          }
+        </style>
+        <div>
+          <div class="reapop__container reapop__container--top-center"
+            style="position: fixed; z-index: 999999; top: 20px; left: 50%; transform: translateX(-50%);"></div>
+          <div class="reapop__container reapop__container--top-left"
+            style="position: fixed; z-index: 999999; top: 20px; left: 20px;"></div>
+          <div class="reapop__container reapop__container--top-right"
+            style="position: fixed; z-index: 999999; top: 20px; right: 20px;"></div>
+          <div class="reapop__container reapop__container--bottom-center"
+            style="position: fixed; z-index: 999999; bottom: 20px; left: 50%; transform: translateX(-50%);"></div>
+          <div class="reapop__container reapop__container--bottom-left"
+            style="position: fixed; z-index: 999999; bottom: 20px; left: 20px;"></div>
+          <div class="reapop__container reapop__container--bottom-right"
+            style="position: fixed; z-index: 999999; bottom: 20px; right: 20px;"></div>
+        </div>
+        <div style="height: 100%; width: 100%; position: relative; overflow-x: hidden;">
+          <nav
+            class="nextui-c-hhqfap nextui-c-hhqfap-gaIaSO-variant-static nextui-c-hhqfap-LJXaG-maxWidth-fluid nextui-c-hhqfap-iQsjrz-css nextui-navbar cs-navbar"
+            id="cs-navbar">
+            <div class="nextui-c-egxOLa nextui-navbar-container"><span
+                class="nextui-c-fyNvBR nextui-c-PJLV nextui-navbar-brand css-qjq3zi"
+                style="margin-right: 20px; gap: 15px;">
+                <div
+                  class="nextui-c-iVzbCs nextui-c-iVzbCs-bDGmTT-ready-true nextui-c-iVzbCs-iekIFCf-css nextui-image-container nextui-image--ready"
+                  data-state="ready"><img alt="Whitelabel Image"
+                    class="nextui-c-kbhVdb nextui-c-kbhVdb-ikZHsFe-css nextui-image" data-state="ready"
+                    src="/images/jinko-logo.png" width="150px" style="cursor: pointer;"></div>
+              </span>
+              <ul
+                class="nextui-c-jklhtj nextui-c-dGYPDG nextui-c-PJLV nextui-c-PJLV-gisWVZ-hideIn-sm nextui-c-jklhtj-ijFvnTw-css nextui-navbar-content upper-item-navbar"
+                style="--nextui--transitionDuration: 0ms; --nextui--opacity: 0; --nextui--width: 0px; --nextui--left: calc(var(--nextui--navbarContentItemHorizontalPadding) * 0.5 * -1); justify-content: flex-end; width: 100%; gap: 20px; padding-right: 20px;">
+                <li
+                  class="nextui-c-kOXsPe nextui-c-yrlUe nextui-c-PJLV nextui-c-yrlUe-kJGdUE-activeColor-default nextui-c-yrlUe-hYJzFf-underlineHeight-normal nextui-c-kOXsPe-iPJLV-css nextui-navbar-item"
+                  id="react-aria3732773504-1"><a
+                    class="nextui-c-kzikkm nextui-c-gulvcB nextui-c-kzikkm-hfnKRU-color-default nextui-c-kzikkm-isWIbj-animated-true nextui-c-kzikkm-iejNGLI-css nextui-link nextui-navbar-link"
+                    id="react-aria3732773504-1" href="/claim-rewards" style="white-space: nowrap;">
+                    <div class="mantine-1jggmkl" style="position: relative; height: 100%; align-items: center;">
+                      <p class="nextui-c-PJLV nextui-c-PJLV-hyvuql-weight-bold nextui-c-PJLV-iiNYpTa-css"
+                        style="font-family: var(--fontFamily1); z-index: 1;">Claim Rewards</p>
+                      <div class="css-8l8l5l">
+                        <div class="css-1jgoxni"></div>
+                        <div class="css-j1oqjq"></div>
+                        <div class="css-1l5nq8c"></div>
+                        <div class="css-9te7p8"></div>
+                      </div>
+                    </div>
+                  </a></li>
+                <li
+                  class="nextui-c-kOXsPe nextui-c-yrlUe nextui-c-PJLV nextui-c-yrlUe-kJGdUE-activeColor-default nextui-c-yrlUe-hYJzFf-underlineHeight-normal nextui-c-kOXsPe-iPJLV-css nextui-navbar-item"
+                  id="react-aria3732773504-2"><a
+                    class="nextui-c-kzikkm nextui-c-gulvcB nextui-c-kzikkm-hfnKRU-color-default nextui-c-kzikkm-isWIbj-animated-true nextui-c-kzikkm-iejNGLI-css nextui-link nextui-navbar-link"
+                    id="react-aria3732773504-2" href="/staking-pool" style="white-space: nowrap;">
+                    <p class="nextui-c-PJLV nextui-c-PJLV-hyvuql-weight-bold nextui-c-PJLV-iiNYpTa-css"
+                      style="font-family: var(--fontFamily1);">Staking Pool</p>
+                  </a></li>
+              </ul>
+              <ul
+                class="nextui-c-jklhtj nextui-c-dGYPDG nextui-c-PJLV nextui-c-jklhtj-ihaBLAA-css nextui-navbar-content"
+                style="--nextui--transitionDuration: 0ms; --nextui--opacity: 0; --nextui--width: 0px; --nextui--left: calc(var(--nextui--navbarContentItemHorizontalPadding) * 0.5 * -1); justify-content: flex-end;">
+                <button
+                  class="nextui-c-iWjDFM nextui-c-gulvcB nextui-c-iWjDFM-hkKLfu-color-default nextui-c-iWjDFM-gkIlwi-size-md nextui-c-iWjDFM-cwXrJp-borderWeight-normal nextui-c-iWjDFM-exaRme-auto-true nextui-c-iWjDFM-gglxka-cv nextui-c-iWjDFM-iewNaGT-css nextui-button nextui-button--ready nextui-dropdown-button"
+                  data-state="ready" type="button" id="react-aria2098179761-1" aria-haspopup="true"
+                  aria-expanded="false"><span
+                    class="nextui-c-bDGMeb nextui-c-bDGMeb-jzMUFa-isAuto-true nextui-c-bDGMeb-jeNDWm-isRight-true nextui-c-bDGMeb-gLOJOp-cv nextui-c-bDGMeb-iefzdUn-css nextui-button-icon nextui-button-icon-right"><svg
+                      fill="none" height="14" viewBox="0 0 24 24" width="14" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M17.9188 8.17969H11.6888H6.07877C5.11877 8.17969 4.63877 9.33969 5.31877 10.0197L10.4988 15.1997C11.3288 16.0297 12.6788 16.0297 13.5088 15.1997L15.4788 13.2297L18.6888 10.0197C19.3588 9.33969 18.8788 8.17969 17.9188 8.17969Z"
+                        fill="currentColor"></path>
+                    </svg></span>
+                  <div class="nextui-button-text nextui-button-text-right">en</div>
+                </button>
+                <div style="width: 100%; max-width: 230px;">
+                  <div class="css-17800k0 mantine-1jggmkl"><button
+                      class="mantine-UnstyledButton-root mantine-Button-root mantine-wwgjhq" type="button"
+                      data-button="true" font-size="16"
+                      style="background-color: transparent; color: var(--whiteColor); height: 40px; border-radius: 20px; font-family: var(--fontFamily1); padding: 0px 10px;">
+                      <div class="mantine-1wpc1xj mantine-Button-inner"><span
+                          class="mantine-1ryt1ht mantine-Button-label">0x33…79c7</span></div>
+                    </button><button class="mantine-UnstyledButton-root mantine-Button-root mantine-14zje4f"
+                      type="button" data-button="true" font-size="16">
+                      <div class="mantine-1dxovjq mantine-Button-inner"><span
+                          class="mantine-jt875y mantine-Button-label">
+                          <div class="mantine-1fr50if"
+                            style="background-color: black; width: 100%; border-top-left-radius: 10px; border-bottom-left-radius: 10px;">
+                            <div class="mantine-1sudta" style="align-items: center; margin: 0px 5px;"><img
+                                src="./images/tokens/credits.svg" alt="credit"
+                                style="width: 22px; height: 22px; padding: 2px;">
+                              <p class="nextui-c-PJLV nextui-c-PJLV-hyvuql-weight-bold nextui-c-PJLV-iiNYpTa-css">0</p>
+                            </div>
+                            <div class="mantine-1ovwtsf" style="align-items: center; margin: 0px 5px;"><img
+                                src="./images/tokens/0x82C0A81632A021085a59e9FFA16c77577CD13aE8.svg" alt="token"
+                                style="width: 22px; height: 22px; padding: 2px;">
+                              <p class="nextui-c-PJLV nextui-c-PJLV-hyvuql-weight-bold nextui-c-PJLV-iiNYpTa-css"
+                                style="overflow: hidden; text-overflow: ellipsis;">0</p>
+                            </div>
+                          </div>
+                          <div class="css-cbuq8c mantine-1jggmkl"><svg width="14" height="14" viewBox="0 0 14 14"
+                              fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M14 8H8V14H6V8H0V6H6V0H8V6H14V8Z" fill="black"></path>
+                            </svg></div>
+                        </span></div>
+                    </button></div>
+                </div>
+              </ul>
+            </div>
+          </nav>
+          <div class="master-container" style="background: black; height: calc(100% - 76px); overflow-y: auto;">
+            <div style="height: 100%;">
+              <div class="sc-fmSAUk fetJrf">
+                <div class="mantine-Container-root mantine-9bvkna" style="height: 100%;">
+                  <div style="height: 100%; position: relative; max-width: 100%;">
+                    <div class="sc-ivnCJf dsPBtg mantine-khu038">
+                      <div class="mantine-1928s9c" style="position: relative; width: 500px;">
+                        <div class="sc-fLQRDB jJjPWw mantine-1kc0mjv" id="top-options-bar"
+                          style="width: 100%; height: 45px;"><button
+                            class="nextui-c-iWjDFM nextui-c-gulvcB nextui-c-iWjDFM-hkKLfu-color-default nextui-c-iWjDFM-gkIlwi-size-md nextui-c-iWjDFM-cwXrJp-borderWeight-normal nextui-c-iWjDFM-iPJLV-css nextui-button nextui-button--ready sc-kgKVFY iwHgjd"
+                            data-state="ready" type="button" bg="rgba(118, 118, 115, 0.5)" height="35px" width="35px"
+                            minwidth="35px" padding="0px" borderradius="100%"><span class="nextui-button-text"><svg
+                                width="20" height="18" viewBox="0 0 20 18" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                  d="M18.75 7.7152H3.925L8.4625 2.10999C8.67467 1.84745 8.77675 1.50898 8.74628 1.16903C8.7158 0.829086 8.55527 0.515513 8.3 0.297298C8.04473 0.0790819 7.71563 -0.0259025 7.3851 0.00544001C7.05456 0.0367826 6.74967 0.201885 6.5375 0.464426L0.2875 8.17802C0.245451 8.23937 0.207849 8.30383 0.175 8.37086C0.175 8.43514 0.175 8.47371 0.0875002 8.53799C0.0308421 8.68539 0.0011764 8.8423 0 9.0008C0.0011764 9.1593 0.0308421 9.31621 0.0875002 9.46362C0.0875002 9.5279 0.0874998 9.56647 0.175 9.63075C0.207849 9.69778 0.245451 9.76223 0.2875 9.82359L6.5375 17.5372C6.65503 17.6823 6.8022 17.799 6.96856 17.879C7.13491 17.959 7.31636 18.0003 7.5 18C7.79207 18.0006 8.07511 17.896 8.3 17.7043C8.42657 17.5964 8.5312 17.4638 8.60789 17.3143C8.68458 17.1647 8.73183 17.001 8.74692 16.8326C8.76202 16.6643 8.74466 16.4945 8.69586 16.333C8.64705 16.1715 8.56775 16.0215 8.4625 15.8916L3.925 10.2864H18.75C19.0815 10.2864 19.3995 10.151 19.6339 9.90986C19.8683 9.66876 20 9.34177 20 9.0008C20 8.65984 19.8683 8.33284 19.6339 8.09175C19.3995 7.85065 19.0815 7.7152 18.75 7.7152Z"
+                                  fill="white"></path>
+                              </svg></span></button>
+                          <div id="exp-bar"
+                            style="display: flex; width: 100%; justify-content: center; align-items: center;"></div>
+                          <div class="mantine-sa5kcz" style="flex-basis: 0%;"></div>
+                        </div>
+                        <div id="babylon-loading"
+                          style="display: block; position: absolute; background: var(--blackColor); text-align: center; opacity: 1; z-index: 998; bottom: 0px; width: 500px; height: 832px; padding-bottom: 121px;">
+                          <div style="position: relative; left: 50%; top: 50%; transform: translate(-50%, -50%);">
+                            <div class="mantine-1mcuu1k">
+                              <div id="babylon-loading-icon" style="height: 150px; width: 250px;"><svg
+                                  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                  viewBox="0 0 350 124" width="350" height="124" preserveAspectRatio="xMidYMid slice"
+                                  style="width: 100%; height: 100%; transform: translate3d(0px, 0px, 0px); content-visibility: visible;">
+                                  <defs>
+                                    <clipPath id="__lottie_element_532">
+                                      <rect width="350" height="124" x="0" y="0"></rect>
+                                    </clipPath>
+                                    <clipPath id="__lottie_element_540">
+                                      <path d="M0,0 L1600,0 L1600,600 L0,600z"></path>
+                                    </clipPath>
+                                    <clipPath id="__lottie_element_559">
+                                      <path d="M0,0 L1600,0 L1600,600 L0,600z"></path>
+                                    </clipPath>
+                                    <clipPath id="__lottie_element_626">
+                                      <path d="M0,0 L1600,0 L1600,600 L0,600z"></path>
+                                    </clipPath>
+                                  </defs>
+                                  <g clip-path="url(#__lottie_element_532)">
+                                    <g clip-path="url(#__lottie_element_540)"
+                                      transform="matrix(0.29916998744010925,0,0,0.29916998744010925,-64.33598327636719,-27.750999450683594)"
+                                      opacity="1" style="display: block;">
+                                      <g clip-path="url(#__lottie_element_626)" transform="matrix(1,0,0,1,50,0)"
+                                        opacity="1" style="display: block;">
+                                        <g transform="matrix(1,0,0,1,800,300)" opacity="0.0034909090912363184"
+                                          style="display: none;">
+                                          <g opacity="1" transform="matrix(1,0,0,1,0,0)">
+                                            <path stroke-linecap="round" stroke-linejoin="round" fill-opacity="0"
+                                              stroke="rgb(229,255,0)" stroke-opacity="1" stroke-width="2"
+                                              d=" M-200,-20.387916564941406 C-200,-20.387916564941406 -200,17.493711471557617 -200,17.493711471557617">
+                                            </path>
+                                          </g>
+                                        </g>
+                                        <g transform="matrix(1,0,0,1,780,300)" opacity="0.239327272728338"
+                                          style="display: none;">
+                                          <g opacity="1" transform="matrix(1,0,0,1,0,0)">
+                                            <path stroke-linecap="round" stroke-linejoin="round" fill-opacity="0"
+                                              stroke="rgb(229,255,0)" stroke-opacity="1" stroke-width="2"
+                                              d=" M-200,-25.504249572753906 C-200,-25.504249572753906 -200,25.50016975402832 -200,25.50016975402832">
+                                            </path>
+                                          </g>
+                                        </g>
+                                        <g transform="matrix(1,0,0,1,760,300)" opacity="0.2125818181821488"
+                                          style="display: none;">
+                                          <g opacity="1" transform="matrix(1,0,0,1,0,0)">
+                                            <path stroke-linecap="round" stroke-linejoin="round" fill-opacity="0"
+                                              stroke="rgb(229,255,0)" stroke-opacity="1" stroke-width="2"
+                                              d=" M-200,-36.343875885009766 C-200,-36.343875885009766 -200,27.449934005737305 -200,27.449934005737305">
+                                            </path>
+                                          </g>
+                                        </g>
+                                        <g transform="matrix(1,0,0,1,740,300)" opacity="0.18267272727306064"
+                                          style="display: none;">
+                                          <g opacity="1" transform="matrix(1,0,0,1,0,0)">
+                                            <path stroke-linecap="round" stroke-linejoin="round" fill-opacity="0"
+                                              stroke="rgb(229,255,0)" stroke-opacity="1" stroke-width="2"
+                                              d=" M-200,-52.55118942260742 C-200,-52.55118942260742 -200,39.726810455322266 -200,39.726810455322266">
+                                            </path>
+                                          </g>
+                                        </g>
+                                        <g transform="matrix(1,0,0,1,720,300)" opacity="0.14176363636397313"
+                                          style="display: none;">
+                                          <g opacity="1" transform="matrix(1,0,0,1,0,0)">
+                                            <path stroke-linecap="round" stroke-linejoin="round" fill-opacity="0"
+                                              stroke="rgb(229,255,0)" stroke-opacity="1" stroke-width="2"
+                                              d=" M-200,-16.568851470947266 C-200,-16.568851470947266 -200,13.912975311279297 -200,13.912975311279297">
+                                            </path>
+                                          </g>
+                                        </g>
+                                        <g transform="matrix(1,0,0,1,700,300)" opacity="0.10401818181870667"
+                                          style="display: none;">
+                                          <g opacity="1" transform="matrix(1,0,0,1,0,0)">
+                                            <path stroke-linecap="round" stroke-linejoin="round" fill-opacity="0"
+                                              stroke="rgb(229,255,0)" stroke-opacity="1" stroke-width="2"
+                                              d=" M-200,-15.84494400024414 C-200,-15.84494400024414 -200,17.339250564575195 -200,17.339250564575195">
+                                            </path>
+                                          </g>
+                                        </g>
+                                        <g transform="matrix(1,0,0,1,680,300)" opacity="0.061527272728168894"
+                                          style="display: none;">
+                                          <g opacity="1" transform="matrix(1,0,0,1,0,0)">
+                                            <path stroke-linecap="round" stroke-linejoin="round" fill-opacity="0"
+                                              stroke="rgb(229,255,0)" stroke-opacity="1" stroke-width="2"
+                                              d=" M-200,-22.021390914916992 C-200,-22.021390914916992 -200,22.651737213134766 -200,22.651737213134766">
+                                            </path>
+                                          </g>
+                                        </g>
+                                        <g transform="matrix(1,0,0,1,660,300)" opacity="0.02061818181908308"
+                                          style="display: none;">
+                                          <g opacity="1" transform="matrix(1,0,0,1,0,0)">
+                                            <path stroke-linecap="round" stroke-linejoin="round" fill-opacity="0"
+                                              stroke="rgb(229,255,0)" stroke-opacity="1" stroke-width="2"
+                                              d=" M-200,-19.45563316345215 C-200,-19.45563316345215 -200,18.791810989379883 -200,18.791810989379883">
+                                            </path>
+                                          </g>
+                                        </g>
+                                        <g transform="matrix(1,0,0,1,640,300)" opacity="0.25803636363671245"
+                                          style="display: none;">
+                                          <g opacity="1" transform="matrix(1,0,0,1,0,0)">
+                                            <path stroke-linecap="round" stroke-linejoin="round" fill-opacity="0"
+                                              stroke="rgb(229,255,0)" stroke-opacity="1" stroke-width="2"
+                                              d=" M-200,-11.35859203338623 C-200,-11.35859203338623 -200,10.50521469116211 -200,10.50521469116211">
+                                            </path>
+                                          </g>
+                                        </g>
+                                        <g style="display: none;" transform="matrix(1,0,0,1,620,300)"
+                                          opacity="0.2297090909099957">
+                                          <g opacity="1" transform="matrix(1,0,0,1,0,0)">
+                                            <path stroke-linecap="round" stroke-linejoin="round" fill-opacity="0"
+                                              stroke="rgb(229,255,0)" stroke-opacity="1" stroke-width="2"
+                                              d=" M-200,-7.518901348114014 C-200,-7.518901348114014 -200,8.522141456604004 -200,8.522141456604004">
+                                            </path>
+                                          </g>
+                                        </g>
+                                        <g style="display: none;" transform="matrix(1,0,0,1,600,300)"
+                                          opacity="0.20138181818235695">
+                                          <g opacity="1" transform="matrix(1,0,0,1,0,0)">
+                                            <path stroke-linecap="round" stroke-linejoin="round" fill-opacity="0"
+                                              stroke="rgb(229,255,0)" stroke-opacity="1" stroke-width="2"
+                                              d=" M-200,-22.884347915649414 C-200,-22.884347915649414 -200,21.62297248840332 -200,21.62297248840332">
+                                            </path>
+                                          </g>
+                                        </g>
+                                        <g style="display: none;" transform="matrix(1,0,0,1,580,300)"
+                                          opacity="0.174636363637088">
+                                          <g opacity="1" transform="matrix(1,0,0,1,0,0)">
+                                            <path stroke-linecap="round" stroke-linejoin="round" fill-opacity="0"
+                                              stroke="rgb(229,255,0)" stroke-opacity="1" stroke-width="2"
+                                              d=" M-200,-15.702219009399414 C-200,-15.702219009399414 -200,16.575416564941406 -200,16.575416564941406">
+                                            </path>
+                                          </g>
+                                        </g>
+                                        <g style="display: block;" transform="matrix(1,0,0,1,560,300)"
+                                          opacity="0.07081818181743493">
+                                          <g opacity="1" transform="matrix(1,0,0,1,0,0)">
+                                            <path stroke-linecap="round" stroke-linejoin="round" fill-opacity="0"
+                                              stroke="rgb(229,255,0)" stroke-opacity="1" stroke-width="2"
+                                              d=" M-200,-32.17588424682617 C-200,-32.17588424682617 -200,34.393470764160156 -200,34.393470764160156">
+                                            </path>
+                                          </g>
+                                        </g>
+                                        <g style="display: block;" transform="matrix(1,0,0,1,540,300)"
+                                          opacity="0.32081818181743493">
+                                          <g opacity="1" transform="matrix(1,0,0,1,0,0)">
+                                            <path stroke-linecap="round" stroke-linejoin="round" fill-opacity="0"
+                                              stroke="rgb(229,255,0)" stroke-opacity="1" stroke-width="2"
+                                              d=" M-200,-27.749771118164062 C-200,-27.749771118164062 -200,31.79600715637207 -200,31.79600715637207">
+                                            </path>
+                                          </g>
+                                        </g>
+                                        <g style="display: block;" transform="matrix(1,0,0,1,520,300)"
+                                          opacity="0.5708181818174349">
+                                          <g opacity="1" transform="matrix(1,0,0,1,0,0)">
+                                            <path stroke-linecap="round" stroke-linejoin="round" fill-opacity="0"
+                                              stroke="rgb(229,255,0)" stroke-opacity="1" stroke-width="2"
+                                              d=" M-200,-48.944698333740234 C-200,-48.944698333740234 -200,54.773345947265625 -200,54.773345947265625">
+                                            </path>
+                                          </g>
+                                        </g>
+                                        <g style="display: block;" transform="matrix(1,0,0,1,500,300)"
+                                          opacity="0.820818181817435">
+                                          <g opacity="1" transform="matrix(1,0,0,1,0,0)">
+                                            <path stroke-linecap="round" stroke-linejoin="round" fill-opacity="0"
+                                              stroke="rgb(229,255,0)" stroke-opacity="1" stroke-width="2"
+                                              d=" M-200,-45.02811050415039 C-200,-45.02811050415039 -200,46.28740310668945 -200,46.28740310668945">
+                                            </path>
+                                          </g>
+                                        </g>
+                                        <g style="display: block;" transform="matrix(1,0,0,1,480,300)" opacity="1">
+                                          <g opacity="1" transform="matrix(1,0,0,1,0,0)">
+                                            <path stroke-linecap="round" stroke-linejoin="round" fill-opacity="0"
+                                              stroke="rgb(229,255,0)" stroke-opacity="1" stroke-width="2"
+                                              d=" M-200,-37.81052017211914 C-200,-37.81052017211914 -200,34.63916778564453 -200,34.63916778564453">
+                                            </path>
+                                          </g>
+                                        </g>
+                                        <g style="display: block;" transform="matrix(1,0,0,1,460,300)" opacity="1">
+                                          <g opacity="1" transform="matrix(1,0,0,1,0,0)">
+                                            <path stroke-linecap="round" stroke-linejoin="round" fill-opacity="0"
+                                              stroke="rgb(229,255,0)" stroke-opacity="1" stroke-width="2"
+                                              d=" M-200,-28.64823341369629 C-200,-28.64823341369629 -200,24.824115753173828 -200,24.824115753173828">
+                                            </path>
+                                          </g>
+                                        </g>
+                                        <g style="display: block;" transform="matrix(1,0,0,1,440,300)" opacity="1">
+                                          <g opacity="1" transform="matrix(1,0,0,1,0,0)">
+                                            <path stroke-linecap="round" stroke-linejoin="round" fill-opacity="0"
+                                              stroke="rgb(229,255,0)" stroke-opacity="1" stroke-width="2"
+                                              d=" M-200,-22.388938903808594 C-200,-22.388938903808594 -200,17.912057876586914 -200,17.912057876586914">
+                                            </path>
+                                          </g>
+                                        </g>
+                                        <g transform="matrix(1,0,0,1,800,307.9360046386719)" opacity="1"
+                                          style="display: block;">
+                                          <g opacity="1" transform="matrix(1,0,0,1,0,0)">
+                                            <path stroke-linecap="round" stroke-linejoin="round" fill-opacity="0"
+                                              stroke="rgb(255,155,61)" stroke-opacity="1" stroke-width="3" d="M0 0">
+                                            </path>
+                                          </g>
+                                        </g>
+                                        <g style="display: block;" transform="matrix(1,0,0,1,800,307.9360046386719)"
+                                          opacity="1">
+                                          <g opacity="1" transform="matrix(1,0,0,1,0,0)">
+                                            <path stroke-linecap="round" stroke-linejoin="round" fill-opacity="0"
+                                              stroke="rgb(255,155,61)" stroke-opacity="1" stroke-width="3"
+                                              d=" M-489.16400146484375,-7.935999870300293 C-501.0820007324219,-7.935999870300293 -512.010009765625,-7.935999870300293 -521.5819702148438,-7.935999870300293">
+                                            </path>
+                                          </g>
+                                        </g>
+                                      </g>
+                                      <g clip-path="url(#__lottie_element_559)" transform="matrix(-1,0,0,1,1551,0)"
+                                        opacity="1" style="display: block;">
+                                        <g transform="matrix(1,0,0,1,800,300)" opacity="0.0034909090912363184"
+                                          style="display: none;">
+                                          <g opacity="1" transform="matrix(1,0,0,1,0,0)">
+                                            <path stroke-linecap="round" stroke-linejoin="round" fill-opacity="0"
+                                              stroke="rgb(229,255,0)" stroke-opacity="1" stroke-width="2"
+                                              d=" M-200,-20.387916564941406 C-200,-20.387916564941406 -200,17.493711471557617 -200,17.493711471557617">
+                                            </path>
+                                          </g>
+                                        </g>
+                                        <g transform="matrix(1,0,0,1,780,300)" opacity="0.239327272728338"
+                                          style="display: none;">
+                                          <g opacity="1" transform="matrix(1,0,0,1,0,0)">
+                                            <path stroke-linecap="round" stroke-linejoin="round" fill-opacity="0"
+                                              stroke="rgb(229,255,0)" stroke-opacity="1" stroke-width="2"
+                                              d=" M-200,-25.504249572753906 C-200,-25.504249572753906 -200,25.50016975402832 -200,25.50016975402832">
+                                            </path>
+                                          </g>
+                                        </g>
+                                        <g transform="matrix(1,0,0,1,760,300)" opacity="0.2125818181821488"
+                                          style="display: none;">
+                                          <g opacity="1" transform="matrix(1,0,0,1,0,0)">
+                                            <path stroke-linecap="round" stroke-linejoin="round" fill-opacity="0"
+                                              stroke="rgb(229,255,0)" stroke-opacity="1" stroke-width="2"
+                                              d=" M-200,-36.343875885009766 C-200,-36.343875885009766 -200,27.449934005737305 -200,27.449934005737305">
+                                            </path>
+                                          </g>
+                                        </g>
+                                        <g transform="matrix(1,0,0,1,740,300)" opacity="0.18267272727306064"
+                                          style="display: none;">
+                                          <g opacity="1" transform="matrix(1,0,0,1,0,0)">
+                                            <path stroke-linecap="round" stroke-linejoin="round" fill-opacity="0"
+                                              stroke="rgb(229,255,0)" stroke-opacity="1" stroke-width="2"
+                                              d=" M-200,-52.55118942260742 C-200,-52.55118942260742 -200,39.726810455322266 -200,39.726810455322266">
+                                            </path>
+                                          </g>
+                                        </g>
+                                        <g transform="matrix(1,0,0,1,720,300)" opacity="0.14176363636397313"
+                                          style="display: none;">
+                                          <g opacity="1" transform="matrix(1,0,0,1,0,0)">
+                                            <path stroke-linecap="round" stroke-linejoin="round" fill-opacity="0"
+                                              stroke="rgb(229,255,0)" stroke-opacity="1" stroke-width="2"
+                                              d=" M-200,-16.568851470947266 C-200,-16.568851470947266 -200,13.912975311279297 -200,13.912975311279297">
+                                            </path>
+                                          </g>
+                                        </g>
+                                        <g transform="matrix(1,0,0,1,700,300)" opacity="0.10401818181870667"
+                                          style="display: none;">
+                                          <g opacity="1" transform="matrix(1,0,0,1,0,0)">
+                                            <path stroke-linecap="round" stroke-linejoin="round" fill-opacity="0"
+                                              stroke="rgb(229,255,0)" stroke-opacity="1" stroke-width="2"
+                                              d=" M-200,-15.84494400024414 C-200,-15.84494400024414 -200,17.339250564575195 -200,17.339250564575195">
+                                            </path>
+                                          </g>
+                                        </g>
+                                        <g transform="matrix(1,0,0,1,680,300)" opacity="0.061527272728168894"
+                                          style="display: none;">
+                                          <g opacity="1" transform="matrix(1,0,0,1,0,0)">
+                                            <path stroke-linecap="round" stroke-linejoin="round" fill-opacity="0"
+                                              stroke="rgb(229,255,0)" stroke-opacity="1" stroke-width="2"
+                                              d=" M-200,-22.021390914916992 C-200,-22.021390914916992 -200,22.651737213134766 -200,22.651737213134766">
+                                            </path>
+                                          </g>
+                                        </g>
+                                        <g transform="matrix(1,0,0,1,660,300)" opacity="0.02061818181908308"
+                                          style="display: none;">
+                                          <g opacity="1" transform="matrix(1,0,0,1,0,0)">
+                                            <path stroke-linecap="round" stroke-linejoin="round" fill-opacity="0"
+                                              stroke="rgb(229,255,0)" stroke-opacity="1" stroke-width="2"
+                                              d=" M-200,-19.45563316345215 C-200,-19.45563316345215 -200,18.791810989379883 -200,18.791810989379883">
+                                            </path>
+                                          </g>
+                                        </g>
+                                        <g transform="matrix(1,0,0,1,640,300)" opacity="0.25803636363671245"
+                                          style="display: none;">
+                                          <g opacity="1" transform="matrix(1,0,0,1,0,0)">
+                                            <path stroke-linecap="round" stroke-linejoin="round" fill-opacity="0"
+                                              stroke="rgb(229,255,0)" stroke-opacity="1" stroke-width="2"
+                                              d=" M-200,-11.35859203338623 C-200,-11.35859203338623 -200,10.50521469116211 -200,10.50521469116211">
+                                            </path>
+                                          </g>
+                                        </g>
+                                        <g style="display: none;" transform="matrix(1,0,0,1,620,300)"
+                                          opacity="0.2297090909099957">
+                                          <g opacity="1" transform="matrix(1,0,0,1,0,0)">
+                                            <path stroke-linecap="round" stroke-linejoin="round" fill-opacity="0"
+                                              stroke="rgb(229,255,0)" stroke-opacity="1" stroke-width="2"
+                                              d=" M-200,-7.518901348114014 C-200,-7.518901348114014 -200,8.522141456604004 -200,8.522141456604004">
+                                            </path>
+                                          </g>
+                                        </g>
+                                        <g style="display: none;" transform="matrix(1,0,0,1,600,300)"
+                                          opacity="0.20138181818235695">
+                                          <g opacity="1" transform="matrix(1,0,0,1,0,0)">
+                                            <path stroke-linecap="round" stroke-linejoin="round" fill-opacity="0"
+                                              stroke="rgb(229,255,0)" stroke-opacity="1" stroke-width="2"
+                                              d=" M-200,-22.884347915649414 C-200,-22.884347915649414 -200,21.62297248840332 -200,21.62297248840332">
+                                            </path>
+                                          </g>
+                                        </g>
+                                        <g style="display: none;" transform="matrix(1,0,0,1,580,300)"
+                                          opacity="0.174636363637088">
+                                          <g opacity="1" transform="matrix(1,0,0,1,0,0)">
+                                            <path stroke-linecap="round" stroke-linejoin="round" fill-opacity="0"
+                                              stroke="rgb(229,255,0)" stroke-opacity="1" stroke-width="2"
+                                              d=" M-200,-15.702219009399414 C-200,-15.702219009399414 -200,16.575416564941406 -200,16.575416564941406">
+                                            </path>
+                                          </g>
+                                        </g>
+                                        <g style="display: block;" transform="matrix(1,0,0,1,560,300)"
+                                          opacity="0.07081818181743493">
+                                          <g opacity="1" transform="matrix(1,0,0,1,0,0)">
+                                            <path stroke-linecap="round" stroke-linejoin="round" fill-opacity="0"
+                                              stroke="rgb(229,255,0)" stroke-opacity="1" stroke-width="2"
+                                              d=" M-200,-32.17588424682617 C-200,-32.17588424682617 -200,34.393470764160156 -200,34.393470764160156">
+                                            </path>
+                                          </g>
+                                        </g>
+                                        <g style="display: block;" transform="matrix(1,0,0,1,540,300)"
+                                          opacity="0.32081818181743493">
+                                          <g opacity="1" transform="matrix(1,0,0,1,0,0)">
+                                            <path stroke-linecap="round" stroke-linejoin="round" fill-opacity="0"
+                                              stroke="rgb(229,255,0)" stroke-opacity="1" stroke-width="2"
+                                              d=" M-200,-27.749771118164062 C-200,-27.749771118164062 -200,31.79600715637207 -200,31.79600715637207">
+                                            </path>
+                                          </g>
+                                        </g>
+                                        <g style="display: block;" transform="matrix(1,0,0,1,520,300)"
+                                          opacity="0.5708181818174349">
+                                          <g opacity="1" transform="matrix(1,0,0,1,0,0)">
+                                            <path stroke-linecap="round" stroke-linejoin="round" fill-opacity="0"
+                                              stroke="rgb(229,255,0)" stroke-opacity="1" stroke-width="2"
+                                              d=" M-200,-48.944698333740234 C-200,-48.944698333740234 -200,54.773345947265625 -200,54.773345947265625">
+                                            </path>
+                                          </g>
+                                        </g>
+                                        <g style="display: block;" transform="matrix(1,0,0,1,500,300)"
+                                          opacity="0.820818181817435">
+                                          <g opacity="1" transform="matrix(1,0,0,1,0,0)">
+                                            <path stroke-linecap="round" stroke-linejoin="round" fill-opacity="0"
+                                              stroke="rgb(229,255,0)" stroke-opacity="1" stroke-width="2"
+                                              d=" M-200,-45.02811050415039 C-200,-45.02811050415039 -200,46.28740310668945 -200,46.28740310668945">
+                                            </path>
+                                          </g>
+                                        </g>
+                                        <g style="display: block;" transform="matrix(1,0,0,1,480,300)" opacity="1">
+                                          <g opacity="1" transform="matrix(1,0,0,1,0,0)">
+                                            <path stroke-linecap="round" stroke-linejoin="round" fill-opacity="0"
+                                              stroke="rgb(229,255,0)" stroke-opacity="1" stroke-width="2"
+                                              d=" M-200,-37.81052017211914 C-200,-37.81052017211914 -200,34.63916778564453 -200,34.63916778564453">
+                                            </path>
+                                          </g>
+                                        </g>
+                                        <g style="display: block;" transform="matrix(1,0,0,1,460,300)" opacity="1">
+                                          <g opacity="1" transform="matrix(1,0,0,1,0,0)">
+                                            <path stroke-linecap="round" stroke-linejoin="round" fill-opacity="0"
+                                              stroke="rgb(229,255,0)" stroke-opacity="1" stroke-width="2"
+                                              d=" M-200,-28.64823341369629 C-200,-28.64823341369629 -200,24.824115753173828 -200,24.824115753173828">
+                                            </path>
+                                          </g>
+                                        </g>
+                                        <g style="display: block;" transform="matrix(1,0,0,1,440,300)" opacity="1">
+                                          <g opacity="1" transform="matrix(1,0,0,1,0,0)">
+                                            <path stroke-linecap="round" stroke-linejoin="round" fill-opacity="0"
+                                              stroke="rgb(229,255,0)" stroke-opacity="1" stroke-width="2"
+                                              d=" M-200,-22.388938903808594 C-200,-22.388938903808594 -200,17.912057876586914 -200,17.912057876586914">
+                                            </path>
+                                          </g>
+                                        </g>
+                                        <g transform="matrix(1,0,0,1,800,307.9360046386719)" opacity="1"
+                                          style="display: block;">
+                                          <g opacity="1" transform="matrix(1,0,0,1,0,0)">
+                                            <path stroke-linecap="round" stroke-linejoin="round" fill-opacity="0"
+                                              stroke="rgb(255,155,61)" stroke-opacity="1" stroke-width="3" d="M0 0">
+                                            </path>
+                                          </g>
+                                        </g>
+                                        <g style="display: block;" transform="matrix(1,0,0,1,800,307.9360046386719)"
+                                          opacity="1">
+                                          <g opacity="1" transform="matrix(1,0,0,1,0,0)">
+                                            <path stroke-linecap="round" stroke-linejoin="round" fill-opacity="0"
+                                              stroke="rgb(255,155,61)" stroke-opacity="1" stroke-width="3"
+                                              d=" M-489.16400146484375,-7.935999870300293 C-501.0820007324219,-7.935999870300293 -512.010009765625,-7.935999870300293 -521.5819702148438,-7.935999870300293">
+                                            </path>
+                                          </g>
+                                        </g>
+                                      </g>
+                                      <g transform="matrix(0.5745258927345276,0.8184863924980164,-0.8184863924980164,0.5745258927345276,800,300)"
+                                        opacity="1" style="display: block;">
+                                        <g opacity="1" transform="matrix(1,0,0,1,0,0)">
+                                          <path stroke-linecap="butt" stroke-linejoin="miter" fill-opacity="0"
+                                            stroke-miterlimit="4" stroke="rgb(114,255,233)" stroke-opacity="1"
+                                            stroke-width="3"
+                                            d=" M3.2955338954925537,-136.63824462890625 C44.618534088134766,-136.63824462890625 71.0636978149414,-112.47550201416016 96.689697265625,-84.00250244140625 C119.0136947631836,-59.199501037597656 138.9091033935547,-31.766586303710938 138.9091033935547,4.23041296005249 C138.9091033935547,43.76841354370117 121.1140365600586,69.84085845947266 94.7580337524414,95.29885864257812 C69.57203674316406,119.62586212158203 38.197933197021484,143.74375915527344 0.41593384742736816,143.74375915527344 C-41.535064697265625,143.74375915527344 -73.76956939697266,115.30863189697266 -99.4285659790039,86.07762908935547 C-121.06156921386719,61.433631896972656 -140,35.36800003051758 -140,0 C-140,-40.38600158691406 -114.75862884521484,-69.37670135498047 -87.40363311767578,-94.92869567871094 C-62.38663101196289,-118.29669952392578 -33.638465881347656,-136.63824462890625 3.2955338954925537,-136.63824462890625z">
+                                          </path>
+                                        </g>
+                                      </g>
+                                      <g transform="matrix(-0.9736546874046326,0.22802740335464478,-0.22802740335464478,-0.9736546874046326,800,300)"
+                                        opacity="1" style="display: block;">
+                                        <g opacity="1" transform="matrix(1,0,0,1,0,0)">
+                                          <path stroke-linecap="butt" stroke-linejoin="miter" fill-opacity="0"
+                                            stroke-miterlimit="4" stroke="rgb(255,255,255)" stroke-opacity="1"
+                                            stroke-width="3"
+                                            d=" M4.232685089111328,-139.21694946289062 C45.555686950683594,-139.21694946289062 67.82180786132812,-108.26112365722656 93.44780731201172,-79.78812408447266 C115.77180480957031,-54.98512268066406 138.4312744140625,-29.913597106933594 138.4312744140625,6.083403587341309 C138.4312744140625,45.621402740478516 123.05928802490234,74.0549545288086 96.70328521728516,99.51295471191406 C71.51728820800781,123.83995819091797 37.87377166748047,140.82603454589844 0.09177259355783463,140.82603454589844 C-41.85922622680664,140.82603454589844 -78.30810546875,120.17133331298828 -103.96710205078125,90.9403305053711 C-125.60010528564453,66.29633331298828 -140,35.36800003051758 -140,0 C-140,-40.38600158691406 -111.19258117675781,-66.13480377197266 -83.83757781982422,-91.68680572509766 C-58.820579528808594,-115.05480194091797 -32.70131301879883,-139.21694946289062 4.232685089111328,-139.21694946289062z">
+                                          </path>
+                                        </g>
+                                      </g>
+                                      <g transform="matrix(-0.8226236701011658,-0.5685862302780151,0.5685862302780151,-0.8226236701011658,800,300)"
+                                        opacity="0.8" style="display: block;">
+                                        <g opacity="1" transform="matrix(1,0,0,1,0,0)">
+                                          <path stroke-linecap="butt" stroke-linejoin="miter" fill-opacity="0"
+                                            stroke-miterlimit="4" stroke="rgb(229,255,0)" stroke-opacity="1"
+                                            stroke-width="4"
+                                            d=" M4.187990665435791,-139.09396362304688 C45.510990142822266,-139.09396362304688 67.9764175415039,-108.46211242675781 93.6024169921875,-79.9891128540039 C115.9264144897461,-55.18611526489258 138.45407104492188,-30.001968383789062 138.45407104492188,5.995031356811523 C138.45407104492188,45.53303146362305 122.96651458740234,73.8539810180664 96.61051177978516,99.31198120117188 C71.42451477050781,123.63897705078125 37.88923263549805,140.96517944335938 0.10723236948251724,140.96517944335938 C-41.84376907348633,140.96517944335938 -78.0916519165039,119.93942260742188 -103.75065612792969,90.70841979980469 C-125.38365173339844,66.06442260742188 -140,35.36800003051758 -140,0 C-140,-40.38600158691406 -111.3626480102539,-66.28941345214844 -84.00765228271484,-91.84141540527344 C-58.99065017700195,-115.20941925048828 -32.746009826660156,-139.09396362304688 4.187990665435791,-139.09396362304688z">
+                                          </path>
+                                        </g>
+                                      </g>
+                                      <g transform="matrix(-0.9087802767753601,0.41727498173713684,-0.41727498173713684,-0.9087802767753601,800,300)"
+                                        opacity="0.5" style="display: block;">
+                                        <g opacity="1" transform="matrix(1,0,0,1,0,0)">
+                                          <path stroke-linecap="butt" stroke-linejoin="miter" fill-opacity="0"
+                                            stroke-miterlimit="4" stroke="rgb(229,255,0)" stroke-opacity="1"
+                                            stroke-width="4"
+                                            d=" M4.466044902801514,-139.85906982421875 C45.78904342651367,-139.85906982421875 67.01454162597656,-107.21170043945312 92.64054107666016,-78.73870086669922 C114.96453857421875,-53.93570327758789 138.31228637695312,-29.45218276977539 138.31228637695312,6.544816493988037 C138.31228637695312,46.08281707763672 123.54367065429688,75.10430908203125 97.18766784667969,100.56230926513672 C72.00167083740234,124.8893051147461 37.793052673339844,140.0994873046875 0.011053269729018211,140.0994873046875 C-41.939945220947266,140.0994873046875 -79.43824768066406,121.38219451904297 -105.09724426269531,92.15119171142578 C-126.7302474975586,67.50719451904297 -140,35.36800003051758 -140,0 C-140,-40.38600158691406 -110.30459594726562,-65.32754516601562 -82.94959259033203,-90.8795394897461 C-57.932594299316406,-114.24754333496094 -32.46795654296875,-139.85906982421875 4.466044902801514,-139.85906982421875z">
+                                          </path>
+                                        </g>
+                                      </g>
+                                      <g transform="matrix(0.5745258927345276,0.8184863924980164,-0.8184863924980164,0.5745258927345276,800,300)"
+                                        opacity="1" style="display: block;">
+                                        <g opacity="1" transform="matrix(1,0,0,1,0,0)">
+                                          <path stroke-linecap="butt" stroke-linejoin="miter" fill-opacity="0"
+                                            stroke-miterlimit="4" stroke="rgb(255,155,61)" stroke-opacity="1"
+                                            stroke-width="2"
+                                            d=" M3.2955338954925537,-136.63824462890625 C44.618534088134766,-136.63824462890625 71.0636978149414,-112.47550201416016 96.689697265625,-84.00250244140625 C119.0136947631836,-59.199501037597656 138.9091033935547,-31.766586303710938 138.9091033935547,4.23041296005249 C138.9091033935547,43.76841354370117 121.1140365600586,69.84085845947266 94.7580337524414,95.29885864257812 C69.57203674316406,119.62586212158203 38.197933197021484,143.74375915527344 0.41593384742736816,143.74375915527344 C-41.535064697265625,143.74375915527344 -73.76956939697266,115.30863189697266 -99.4285659790039,86.07762908935547 C-121.06156921386719,61.433631896972656 -140,35.36800003051758 -140,0 C-140,-40.38600158691406 -114.75862884521484,-69.37670135498047 -87.40363311767578,-94.92869567871094 C-62.38663101196289,-118.29669952392578 -33.638465881347656,-136.63824462890625 3.2955338954925537,-136.63824462890625z">
+                                          </path>
+                                        </g>
+                                      </g>
+                                    </g>
+                                    <g transform="matrix(-0.10440408438444138,-0.03072059340775013,0.03072059340775013,-0.10440408438444138,193.86297607421875,96.5919189453125)"
+                                      opacity="1" style="display: block;">
+                                      <g opacity="1" transform="matrix(1,0,0,1,255.9980010986328,256)">
+                                        <path fill="rgb(229,255,0)" fill-opacity="1"
+                                          d=" M-41.263999938964844,172 C-41.263999938964844,177.5229949951172 -36.78300094604492,182 -31.263999938964844,182 C-31.263999938964844,182 31.263999938964844,182 31.263999938964844,182 C36.7869987487793,182 41.263999938964844,177.5229949951172 41.263999938964844,172 C41.263999938964844,172 41.263999938964844,152.61300659179688 41.263999938964844,152.61300659179688 C54.4119987487793,149.07400512695312 66.98200225830078,143.86300659179688 78.79499816894531,137.05799865722656 C78.79499816894531,137.05799865722656 92.48200225830078,150.74600219726562 92.48200225830078,150.74600219726562 C94.35700225830078,152.62100219726562 96.9000015258789,153.6750030517578 99.55699920654297,153.6750030517578 C102.20500183105469,153.6750030517578 104.75199890136719,152.62100219726562 106.62699890136719,150.74200439453125 C106.62699890136719,150.74200439453125 150.82200622558594,106.51499938964844 150.82200622558594,106.51499938964844 C154.72500610351562,102.60900115966797 154.72500610351562,96.2770004272461 150.82200622558594,92.375 C150.82200622558594,92.375 137.14999389648438,78.7030029296875 137.14999389648438,78.7030029296875 C143.9550018310547,66.88999938964844 149.16600036621094,54.31999969482422 152.7050018310547,41.172000885009766 C152.7050018310547,41.172000885009766 172.01800537109375,41.172000885009766 172.01800537109375,41.172000885009766 C177.54100036621094,41.172000885009766 182.01800537109375,36.69499969482422 182.01800537109375,31.172000885009766 C182.01800537109375,31.172000885009766 182.01800537109375,-31.356000900268555 182.01800537109375,-31.356000900268555 C182.01800537109375,-36.87900161743164 177.54100036621094,-41.35599899291992 172.01800537109375,-41.35599899291992 C172.01800537109375,-41.35599899291992 152.7010040283203,-41.35599899291992 152.7010040283203,-41.35599899291992 C149.16200256347656,-54.5 143.9550018310547,-67.07099914550781 137.14999389648438,-78.88300323486328 C137.14999389648438,-78.88300323486328 150.7480010986328,-92.48100280761719 150.7480010986328,-92.48100280761719 C152.6230010986328,-94.35600280761719 153.67799377441406,-96.90299987792969 153.67799377441406,-99.55500030517578 C153.6739959716797,-102.20700073242188 152.61900329589844,-104.75399780273438 150.74400329589844,-106.62899780273438 C150.74400329589844,-106.62899780273438 106.51399993896484,-150.8249969482422 106.51399993896484,-150.8249969482422 C102.61100006103516,-154.7270050048828 96.27899932861328,-154.7270050048828 92.37300109863281,-150.8209991455078 C92.37300109863281,-150.8209991455078 78.79499816894531,-137.23899841308594 78.79499816894531,-137.23899841308594 C66.98200225830078,-144.04299926757812 54.4119987487793,-149.25399780273438 41.263999938964844,-152.79299926757812 C41.263999938964844,-152.79299926757812 41.263999938964844,-172 41.263999938964844,-172 C41.263999938964844,-177.5240020751953 36.7869987487793,-182 31.263999938964844,-182 C31.263999938964844,-182 -31.263999938964844,-182 -31.263999938964844,-182 C-36.78300094604492,-182 -41.263999938964844,-177.5240020751953 -41.263999938964844,-172 C-41.263999938964844,-172 -41.263999938964844,-152.78900146484375 -41.263999938964844,-152.78900146484375 C-54.40800094604492,-149.25399780273438 -66.97799682617188,-144.04299926757812 -78.79100036621094,-137.23899841308594 C-78.79100036621094,-137.23899841308594 -92.37300109863281,-150.8209991455078 -92.37300109863281,-150.8209991455078 C-96.2750015258789,-154.72300720214844 -102.60700225830078,-154.7270050048828 -106.51399993896484,-150.8249969482422 C-106.51399993896484,-150.8249969482422 -150.74000549316406,-106.625 -150.74000549316406,-106.625 C-152.61900329589844,-104.75 -153.6739959716797,-102.20700073242188 -153.6739959716797,-99.55500030517578 C-153.6739959716797,-96.90299987792969 -152.61900329589844,-94.35600280761719 -150.74400329589844,-92.48100280761719 C-150.74400329589844,-92.48100280761719 -137.14599609375,-78.88300323486328 -137.14599609375,-78.88300323486328 C-143.9510040283203,-67.07099914550781 -149.16200256347656,-54.50400161743164 -152.7010040283203,-41.35599899291992 C-152.7010040283203,-41.35599899291992 -171.97799682617188,-41.35599899291992 -171.97799682617188,-41.35599899291992 C-177.5019989013672,-41.35599899291992 -181.97799682617188,-36.87900161743164 -181.97799682617188,-31.360000610351562 C-181.97799682617188,-31.360000610351562 -182.01400756835938,31.167999267578125 -182.01400756835938,31.167999267578125 C-182.01800537109375,33.81999969482422 -180.96299743652344,36.367000579833984 -179.08799743652344,38.242000579833984 C-177.21299743652344,40.117000579833984 -174.6699981689453,41.172000885009766 -172.01400756835938,41.172000885009766 C-172.01400756835938,41.172000885009766 -152.7010040283203,41.172000885009766 -152.7010040283203,41.172000885009766 C-149.16200256347656,54.31999969482422 -143.9510040283203,66.88999938964844 -137.14599609375,78.7030029296875 C-137.14599609375,78.7030029296875 -150.8179931640625,92.375 -150.8179931640625,92.375 C-154.7209930419922,96.2770004272461 -154.72500610351562,102.60900115966797 -150.8179931640625,106.51499938964844 C-150.8179931640625,106.51499938964844 -106.62300109863281,150.74200439453125 -106.62300109863281,150.74200439453125 C-104.74800109863281,152.61700439453125 -102.20500183105469,153.6750030517578 -99.5530014038086,153.6750030517578 C-99.5530014038086,153.6750030517578 -99.54900360107422,153.6750030517578 -99.54900360107422,153.6750030517578 C-96.89600372314453,153.6750030517578 -94.35299682617188,152.62100219726562 -92.47799682617188,150.74600219726562 C-92.47799682617188,150.74600219726562 -78.79499816894531,137.05799865722656 -78.79499816894531,137.05799865722656 C-66.97799682617188,143.86300659179688 -54.40800094604492,149.07400512695312 -41.263999938964844,152.61300659179688 C-41.263999938964844,152.61300659179688 -41.263999938964844,172 -41.263999938964844,172z M-74.87300109863281,116.0270004272461 C-78.83000183105469,113.46800231933594 -84.03700256347656,114.02300262451172 -87.37300109863281,117.3550033569336 C-87.37300109863281,117.3550033569336 -99.54900360107422,129.531005859375 -99.54900360107422,129.531005859375 C-99.54900360107422,129.531005859375 -129.60699462890625,99.4489974975586 -129.60699462890625,99.4489974975586 C-129.60699462890625,99.4489974975586 -117.44300079345703,87.28099822998047 -117.44300079345703,87.28099822998047 C-114.11100006103516,83.9489974975586 -113.55699920654297,78.74199676513672 -116.11499786376953,74.78500366210938 C-125.18199920654297,60.75400161743164 -131.5570068359375,45.375 -135.0570068359375,29.06999969482422 C-136.0489959716797,24.464000701904297 -140.11900329589844,21.172000885009766 -144.83399963378906,21.172000885009766 C-144.83399963378906,21.172000885009766 -162.00999450683594,21.172000885009766 -162.00999450683594,21.172000885009766 C-162.00999450683594,21.172000885009766 -161.98599243164062,-21.356000900268555 -161.98599243164062,-21.356000900268555 C-161.98599243164062,-21.356000900268555 -144.83399963378906,-21.356000900268555 -144.83399963378906,-21.356000900268555 C-140.11900329589844,-21.356000900268555 -136.0489959716797,-24.645000457763672 -135.0570068359375,-29.253999710083008 C-131.5570068359375,-45.55500030517578 -125.18199920654297,-60.933998107910156 -116.11499786376953,-74.96499633789062 C-113.55699920654297,-78.9219970703125 -114.11100006103516,-84.12899780273438 -117.44300079345703,-87.46099853515625 C-117.44300079345703,-87.46099853515625 -129.5290069580078,-99.5510025024414 -129.5290069580078,-99.5510025024414 C-129.5290069580078,-99.5510025024414 -99.4469985961914,-129.61000061035156 -99.4469985961914,-129.61000061035156 C-99.4469985961914,-129.61000061035156 -87.37300109863281,-117.53199768066406 -87.37300109863281,-117.53199768066406 C-84.03700256347656,-114.19999694824219 -78.83399963378906,-113.64900207519531 -74.87300109863281,-116.2030029296875 C-60.84600067138672,-125.2699966430664 -45.46699905395508,-131.64500427246094 -29.16200065612793,-135.14500427246094 C-24.55699920654297,-136.13699340820312 -21.263999938964844,-140.21099853515625 -21.263999938964844,-144.9219970703125 C-21.263999938964844,-144.9219970703125 -21.263999938964844,-162 -21.263999938964844,-162 C-21.263999938964844,-162 21.263999938964844,-162 21.263999938964844,-162 C21.263999938964844,-162 21.263999938964844,-144.92599487304688 21.263999938964844,-144.92599487304688 C21.263999938964844,-140.21099853515625 24.55299949645996,-136.13699340820312 29.16200065612793,-135.1490020751953 C45.4630012512207,-131.64500427246094 60.84600067138672,-125.27400207519531 74.87300109863281,-116.20700073242188 C78.83000183105469,-113.64900207519531 84.03700256347656,-114.19999694824219 87.36900329589844,-117.53500366210938 C87.36900329589844,-117.53500366210938 99.4469985961914,-129.61000061035156 99.4469985961914,-129.61000061035156 C99.4469985961914,-129.61000061035156 129.5290069580078,-99.5510025024414 129.5290069580078,-99.5510025024414 C129.5290069580078,-99.5510025024414 117.44300079345703,-87.46499633789062 117.44300079345703,-87.46499633789062 C114.10700225830078,-84.12899780273438 113.55699920654297,-78.9219970703125 116.11499786376953,-74.96499633789062 C125.18199920654297,-60.933998107910156 131.55299377441406,-45.55500030517578 135.0570068359375,-29.253999710083008 C136.0449981689453,-24.645000457763672 140.11900329589844,-21.356000900268555 144.83399963378906,-21.356000900268555 C144.83399963378906,-21.356000900268555 162.01800537109375,-21.356000900268555 162.01800537109375,-21.356000900268555 C162.01800537109375,-21.356000900268555 162.01800537109375,21.172000885009766 162.01800537109375,21.172000885009766 C162.01800537109375,21.172000885009766 144.83399963378906,21.172000885009766 144.83399963378906,21.172000885009766 C140.11900329589844,21.172000885009766 136.0489959716797,24.464000701904297 135.0570068359375,29.06999969482422 C131.5570068359375,45.37099838256836 125.18199920654297,60.75400161743164 116.11499786376953,74.78099822998047 C113.55699920654297,78.74199676513672 114.11100006103516,83.9489974975586 117.44300079345703,87.28099822998047 C117.44300079345703,87.28099822998047 129.60699462890625,99.44499969482422 129.60699462890625,99.44499969482422 C129.60699462890625,99.44499969482422 99.54900360107422,129.52699279785156 99.54900360107422,129.52699279785156 C99.54900360107422,129.52699279785156 87.37300109863281,117.3550033569336 87.37300109863281,117.3550033569336 C84.03700256347656,114.01899719238281 78.83000183105469,113.46800231933594 74.87300109863281,116.0270004272461 C60.84199905395508,125.09300231933594 45.4630012512207,131.46400451660156 29.16200065612793,134.96800231933594 C24.55299949645996,135.96099853515625 21.263999938964844,140.031005859375 21.263999938964844,144.74600219726562 C21.263999938964844,144.74600219726562 21.263999938964844,162 21.263999938964844,162 C21.263999938964844,162 -21.263999938964844,162 -21.263999938964844,162 C-21.263999938964844,162 -21.263999938964844,144.74600219726562 -21.263999938964844,144.74600219726562 C-21.263999938964844,140.03500366210938 -24.55699920654297,135.96099853515625 -29.16200065612793,134.96800231933594 C-45.4630012512207,131.46800231933594 -60.84199905395508,125.09300231933594 -74.87300109863281,116.0270004272461z">
+                                        </path>
+                                      </g>
+                                    </g>
+                                    <g transform="matrix(0.09921000152826309,0,0,0.09921000152826309,149.60223388671875,36.60224151611328)"
+                                      opacity="1" style="display: block;">
+                                      <g opacity="1" transform="matrix(1,0,0,1,256,256)">
+                                        <path fill="rgb(229,255,0)" fill-opacity="1"
+                                          d=" M82.62899780273438,0 C82.62899780273438,-45.5629997253418 45.5620002746582,-82.62899780273438 0,-82.62899780273438 C-45.5629997253418,-82.62899780273438 -82.62899780273438,-45.5629997253418 -82.62899780273438,0 C-82.62899780273438,45.5629997253418 -45.5629997253418,82.62899780273438 0,82.62899780273438 C45.5620002746582,82.62899780273438 82.62899780273438,45.5629997253418 82.62899780273438,0z M-62.62900161743164,0 C-62.62900161743164,-34.53499984741211 -34.53499984741211,-62.62900161743164 0,-62.62900161743164 C34.53499984741211,-62.62900161743164 62.62900161743164,-34.53099822998047 62.62900161743164,0 C62.62900161743164,34.53099822998047 34.53499984741211,62.62900161743164 0,62.62900161743164 C-34.53499984741211,62.62900161743164 -62.62900161743164,34.53499984741211 -62.62900161743164,0z">
+                                        </path>
+                                      </g>
+                                    </g>
+                                  </g>
+                                </svg></div>
+                            </div>
+                          </div>
+                        </div>
+                        <div id="canvas-wrapper" class="sc-fGFwAa jxeNvu"><canvas id="babylon-canvas"
+                            style="width: 500px; height: 832px; outline: none; touch-action: none; -webkit-tap-highlight-color: transparent;"
+                            width="500" height="832" data-engine="Babylon.js v6.3.1" touch-action="none"
+                            tabindex="1"></canvas></div>
+                      </div>
+                      <form autocomplete="off" class="sc-cyRfQX jntRNW">
+                        <div class="sc-lnAgIa jdsASV mantine-1dgc2k6" style="width: 100%;">
+                          <div class="sc-bALXmG dKFagw mantine-1dgc2k6" id="desktop-options" style="width: 100%;">
+                            <div class="mantine-1dfqgrh" style="width: 100%;">
+                              <div class="mantine-1j6ciyz" style="width: 150px;">
+                                <p class="nextui-c-PJLV nextui-c-PJLV-hyvuql-weight-bold nextui-c-PJLV-iiFPzWC-css">
+                                  Language:</p>
+                              </div>
+                              <div class="mantine-2ypi42" style="flex: 3 1 0%;"><button
+                                  class="nextui-c-iWjDFM nextui-c-gulvcB nextui-c-iWjDFM-hkKLfu-color-default nextui-c-iWjDFM-gkIlwi-size-md nextui-c-iWjDFM-cwXrJp-borderWeight-normal nextui-c-iWjDFM-exaRme-auto-true nextui-c-iWjDFM-gglxka-cv nextui-c-iWjDFM-idGjVqn-css nextui-button nextui-button--ready nextui-dropdown-button sc-ieZDjg fntVql"
+                                  data-state="ready" type="button" id="react-aria2098179761-3" aria-haspopup="true"
+                                  aria-expanded="false"><span
+                                    class="nextui-c-bDGMeb nextui-c-bDGMeb-jzMUFa-isAuto-true nextui-c-bDGMeb-jeNDWm-isRight-true nextui-c-bDGMeb-gLOJOp-cv nextui-c-bDGMeb-iefzdUn-css nextui-button-icon nextui-button-icon-right"><svg
+                                      fill="none" height="14" viewBox="0 0 24 24" width="14"
+                                      xmlns="http://www.w3.org/2000/svg">
+                                      <path
+                                        d="M17.9188 8.17969H11.6888H6.07877C5.11877 8.17969 4.63877 9.33969 5.31877 10.0197L10.4988 15.1997C11.3288 16.0297 12.6788 16.0297 13.5088 15.1997L15.4788 13.2297L18.6888 10.0197C19.3588 9.33969 18.8788 8.17969 17.9188 8.17969Z"
+                                        fill="currentColor"></path>
+                                    </svg></span>
+                                  <div class="nextui-button-text nextui-button-text-right">
+                                    <p class="nextui-c-PJLV nextui-c-PJLV-hyvuql-weight-bold nextui-c-PJLV-icikoAQ-css">
+                                      English</p>
+                                  </div>
+                                </button></div>
+                            </div>
+                            <div class="mantine-rd71x1" style="width: 100%;">
+                              <div class="mantine-1j6ciyz" style="width: 150px; flex: 0 0 auto;">
+                                <p class="nextui-c-PJLV nextui-c-PJLV-hyvuql-weight-bold nextui-c-PJLV-iiFPzWC-css">
+                                  Personality:</p>
+                              </div>
+                              <div style="overflow: hidden; pointer-events: none; width: 100%;">
+                                <div class="hide-scrollbar-keep-function mantine-1jggmkl" id="personality-bar"
+                                  style="width: 100%;">
+                                  <div class="border-radio-button-desktop mantine-1jggmkl">
+                                    <div class="mantine-16xuvqj" style="margin: 5px 30px; width: max-content;"><img
+                                        src="/images/male-avatar.png" alt="Alex (Personal Assistant)"
+                                        crossorigin=""
+                                        style="width: 30px; height: 30px; border: 1px solid var(--yellowColor); border-radius: 100%;">
+                                      <p
+                                        class="nextui-c-PJLV nextui-c-PJLV-hyvuql-weight-bold nextui-c-PJLV-ikxmSbD-css">
+                                        Alex (Personal Assistant)</p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="sc-iKGpAt bgRGjX mantine-iw5mqc"
+                            style="width: 100%; position: relative; height: 100%;">
+                            <div class="cs-main-container sc-gjTGSA cgFdQW">
+                              <div class="cs-chat-container">
+                                <div class="cs-message-list">
+                                  <div data-cs-message-list=""
+                                    class="scrollbar-container cs-message-list__scroll-wrapper ps"
+                                    style="overscroll-behavior-y: none; overflow-anchor: auto; touch-action: none;">
+                                    <section aria-label="assistant"
+                                      class="cs-message cs-message--incoming cs-message--single" data-cs-message=""
+                                      style="width: 90%;">
+                                      <div class="cs-message__avatar">
+                                        <div class="cs-avatar cs-avatar--md"
+                                          style="border: 1px solid var(--yellowColor);"><img
+                                            src="/images/male-avatar.png"
+                                            alt="Alex (Personal Assistant)" crossorigin=""
+                                            style="width: 100%; height: 100%;"></div>
+                                      </div>
+                                      <div class="cs-message__content-wrapper">
+                                        <div class="cs-message__content">
+                                          <div class="cs-message__custom-content">
+                                            <div class="mantine-xg7kom"><strong
+                                                style="color: var(--yellowColor); text-transform: uppercase;">Alex
+                                              </strong><small style="color: var(--yellowColor);">just now</small></div>
+                                            <p>Hey boss, how may I assist you today?</p>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </section>
+                                    <div class="cs-message-list__scroll-to"></div>
+                                    <div class="ps__rail-x" style="left: 0px; bottom: 0px;">
+                                      <div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px;"></div>
+                                    </div>
+                                    <div class="ps__rail-y" style="top: 0px; right: 0px;">
+                                      <div class="ps__thumb-y" tabindex="0" style="top: 0px; height: 0px;"></div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="mantine-1jggmkl" id="send-a-message-bar"
+                              style="width: 100%; align-items: center; gap: 5px;">
+                              <div class="mantine-1dgc2k6"
+                                style="background-color: rgb(47, 52, 50); width: 100%; border-radius: 25px; padding: 5px 10px;">
+                                <input autocomplete="off" autocorrect="off" class="sc-beqWaB bdNgul input-custom"
+                                  name="message" type="text" role="presentation" placeholder="Send a message..."
+                                  value="" style="width: 100%;"></div><button
+                                class="nextui-c-iWjDFM nextui-c-gulvcB nextui-c-iWjDFM-hkKLfu-color-default nextui-c-iWjDFM-gkIlwi-size-md nextui-c-iWjDFM-cwXrJp-borderWeight-normal nextui-c-iWjDFM-eWhiMK-animated-false nextui-c-iWjDFM-iecpBmN-css nextui-button nextui-button--disabled sc-dnwKUv jHKIiB"
+                                data-state="disabled" type="submit" disabled="" height="100%" width="fit-content"><span
+                                  class="nextui-button-text"><svg width="18" height="16" viewBox="0 0 18 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                      d="M7.70652 7.51655L0.5 5.61483V0.769381L16.7689 8L0.5 15.2306V10.3852L7.70652 8.48345L9.53855 8L7.70652 7.51655Z"
+                                      stroke="#E5FF00"></path>
+                                  </svg></span></button><button
+                                class="nextui-c-iWjDFM nextui-c-gulvcB nextui-c-iWjDFM-hkKLfu-color-default nextui-c-iWjDFM-gkIlwi-size-md nextui-c-iWjDFM-cwXrJp-borderWeight-normal nextui-c-iWjDFM-iPJLV-css nextui-button nextui-button--ready sc-kgKVFY gmuwCw"
+                                data-state="ready" type="button" padding="0px" borderradius="100%"
+                                bg="var(--yellowColor))" height="35px" width="35px" minwidth="35px"><span
+                                  class="nextui-button-text"><svg width="26" height="26" viewBox="0 0 26 26" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                      d="M15.1096 4.09026C15.2162 4.15055 15.305 4.23807 15.3668 4.34388C15.4286 4.4497 15.4612 4.57002 15.4613 4.69255V21.3076C15.4613 21.4301 15.4288 21.5504 15.3672 21.6562C15.3055 21.762 15.2169 21.8496 15.1103 21.91C15.0037 21.9704 14.883 22.0014 14.7606 21.9999C14.6381 21.9985 14.5182 21.9645 14.4131 21.9015L7.65497 17.8461H5.07688C4.52605 17.8461 3.99779 17.6273 3.6083 17.2378C3.21881 16.8483 3 16.32 3 15.7692V10.2267C3.00037 9.67616 3.21934 9.14825 3.60879 8.75906C3.99824 8.36987 4.52629 8.15124 5.07688 8.15125H7.65497L14.4117 4.09857C14.5169 4.03551 14.6369 4.00151 14.7595 4.00005C14.8821 3.99859 15.0029 4.02972 15.1096 4.09026Z"
+                                      fill="black"></path>
+                                    <path d="M18 16L20.5 13.5M20.5 13.5L23 11M20.5 13.5L18 11M20.5 13.5L23 16"
+                                      stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                    </path>
+                                  </svg></span></button>
+                            </div>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div dir="ltr">
+      <div>
+        <div class="mantine-480qv8 mantine-Modal-root"></div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div dir="ltr">
+      <div>
+        <div class="mantine-480qv8 mantine-Modal-root"></div>
+      </div>
+    </div>
+  </div>
+  <div style="position: absolute; top: 0px; left: 0px; margin: 0px; padding: 0px;"></div>
+  <div id="monica-content-root" class="monica-widget" style="pointer-events: auto;"></div><iframe id="verify-api"
+    src="https://verify.walletconnect.com/99248cda07d796ddd1e6a39b1411aad6" style="display: none;"></iframe>
+  <wcm-modal></wcm-modal>
+  <div id="nextui-modal"></div>
+</body>
+
+</html>
